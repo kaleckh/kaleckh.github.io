@@ -1,38 +1,288 @@
-.App {
-  text-align: center;
+:root {}
+
+.header {
+    display: flex;
+    background-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.headerWords {
+    margin: 25px;
+    font-weight: 300;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.containerThree {
+    display: flex;
+    padding-left: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.line {
+    background-color: white;
+    margin-top: 35px;
+    height: 2px;
+    width: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.socials {
+    padding: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.skillsContainer {
+    display: flex;
+}
+
+.skillsWords {
+    padding: 3px;
+}
+
+.headerWord {
+    font-weight: 200;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.divWordContainer {
+    display: flex;
+    width: 35vw;
+    margin: 25px;
+    justify-content: space-around;
+}
+
+.section {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.sectionThree {
+    display: flex;
+    height: 70vh;
+    width: 100vw;
+}
+
+.sectionFour {
+    display: flex;
+    height: 50vh;
+    width: 100vw;
+    padding-top: 25px;
+}
+
+.redSection {
+    height: 143vh;
+}
+
+.one {
+    background-color: black;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionOneFont {
+    font-size: 120px;
+    font-weight: 200;
+    margin-top: 150px;
+}
+
+.two {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photoTitle {
+    font-size: 75px;
+    font-weight: 200;
+}
+
+.card {
+    opacity: 0;
+    margin: 10px;
+    filter: blur(5px);
+    transition: all 1s;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+    opacity: 0;
+}
+
+.card:nth-child(1) {
+    transition-delay: 600ms;
+}
+
+.card:nth-child(2) {
+    transition-delay: 400ms;
+}
+
+.card:nth-child(3) {
+    transition-delay: 200ms;
+}
+
+.card:nth-child(4) {
+    transition-delay: 600ms;
+}
+
+.card:nth-child(5) {
+    transition-delay: 400ms;
+}
+
+.card:nth-child(6) {
+    transition-delay: 200ms;
+}
+
+.twitter {
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+}
+
+.socialsContainer {
+    display: flex;
+}
+
+.card.show {
+    filter: blur(0px);
+    opacity: 1;
+}
+
+@media (width < 600px) {
+    .two {
+        background-color: black;
+    }
+}
+
+.twoTitle {
+    font-size: large;
+    margin: 25px;
+}
+
+.sectionTwoPhotoContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 90vw;
+}
+
+.square {
+    height: 200px;
+    width: 200px;
+    background-color: black;
+}
+
+.three {
+    background-color: black;
+    justify-content: end;
+    display: flex;
+    flex-direction: column;
+    padding-left: 300px;
+    padding-bottom: 20px;
+}
+
+.bottom {
+    display: flex;
+}
+
+.contactContainer {
+    height: 100px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.largerText {
+    font-weight: 300;
+    font-size: 35px;
+}
+
+.smallText {
+    font-weight: 200;
+}
+
+.githubLink {
+    color: white;
+}
+
+.four {
+    background-color: black;
+    display: flex;
+}
+
+.workLeftContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 150px;
+    flex-direction: column;
+    width: 35vw;
+}
+
+.workRightContainer {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
+
+.projects {
+    height: 250px;
+    border-radius: 10px;
+    width: 250px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.bottomProject {
+    display: flex;
+    justify-content: center;
+}
+
+.wholeScreen {
+    height: 100%;
+    scroll-behavior: smooth;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    background-color: #dadbf1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    color: aliceblue;
+    padding: 10px;
+}
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px 10px;
+}
+
+.griditem {
+    height: 50px;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    background-color: black;
+    height: 80vh;
 }
