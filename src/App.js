@@ -1,4 +1,5 @@
 import "./App.css";
+import emailJs from 'emailjs-com'
 import mainPhoto from "./photos/mainPhoto.jpg";
 import photo1 from "./photos//photo1.JPG";
 import photo2 from "./photos/photo2.jpg";
@@ -16,14 +17,11 @@ function App() {
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("show");
-        }
-        // entry.target.classList.toggle("show", entry.isIntersecting);
+        entry.target.classList.toggle("show", entry.isIntersecting);
       });
     },
     {
-      threshold: 1,
+      threshold: 0.5,
     }
   );
   images.forEach((image) => {
@@ -31,17 +29,33 @@ function App() {
   });
   return (
     <div className="wholeScreen">
-      <header className="header">
+      <div className="containerThree">
+        <div className="line"></div>
+        <div className="socials"> Check out my Socials </div>
+        <div className="line"></div>
+      </div>
+      <div className="socialsContainer">
+        <img className="twitter" src={twitter} alt="" />
+        <img className="twitter" src={instagram} alt="" />
+        <img className="twitter" src={linkedin} alt="" />
+      </div>
+      <header className="header sticky">
         <div className="headerWords">Kaleck</div>
         <div className="headerContainer">
           <div className="divWordContainer">
-            <div className="headerWord">Photos</div>
-            <div className="headerWord">Projects</div>
-            <div className="headerWord">Contact me</div>
+            <div className="headerWord">
+              <a href="#section-2">Photos</a>
+            </div>
+            <div className="headerWord">
+              <a href="#section-3">Projects</a>
+            </div>
+            <div className="headerWord">
+              <a href="#section-4">Contact Me</a>
+            </div>
           </div>
         </div>
       </header>
-      <div className="section one">
+      <div id="section-1" className="section one">
         <div className="sectionOneFont">Hi! im Kaleck</div>
         <div className="headerWord">
           I'm a full stack Software Engineer with extensive experience in sales
@@ -49,7 +63,7 @@ function App() {
         </div>
         <div className="headerWord">React | Javascript | Node.js </div>
       </div>
-      <div className="redSection two">
+      <div id="section-2" className="redSection two">
         <div className="twoTitle">
           <div className="photoTitle">I Like To Take Photos And Travel</div>
         </div>
@@ -63,43 +77,46 @@ function App() {
         </div>
       </div>
 
-      <div className="sectionFour four">
+      <div id="section-3" className="sectionFour four">
         <div className="workLeftContainer">
-          <div className="largerText">Here Is Some Of My Work</div>
+          <div className="largerText">Some things i've built</div>
           <div className="smallText">
             My GitHub link is{" "}
-            <a className="githubLink" href="">
+            <a className="githubLink" href="https://github.com/kaleckh">
               Here
             </a>
           </div>
-          <img src="" alt="" />
         </div>
-        <div>
-          <div className="workRightContainer">
-            <img className="projects" src={firstProject} alt="" />
-            <img className="projects" src={firstProject} alt="" />
-          </div>
-          <div className="bottomProject">
-            <img className="projects" src={firstProject} alt="" />
-          </div>
+
+        <div className="workRightContainer">
+          <img className="projects" src={firstProject} alt="" />
+          <img className="projects" src={firstProject} alt="" />
         </div>
       </div>
-      <div className="bottom">
-        <div className="sectionThree three">
-          <div className="containerThree">
-            <div className="line"></div>
-            <div className="socials"> Check out my Socials </div>
-            <div className="line"></div>
+
+      <div className="sectionThree three" id="section-4">
+        <div className="photoTitle contactTitle">Send me a message!</div>
+        <div className="contactInputs">
+          <div className="inputContainer">
+            <div className="leftSide">
+              <div className="contactP">Your Name</div>
+            </div>
+            <input className="contactInput" type="text" />
           </div>
-          <div className="socialsContainer">
-            <img className="twitter" src={twitter} alt="" />
-            <img className="twitter" src={instagram} alt="" />
-            <img className="twitter" src={linkedin} alt="" />
+          <div className="inputContainer">
+            <div className="leftSide">
+              <div className="contactP">Email Address</div>
+            </div>
+            <input className="contactInput" type="text" />
           </div>
         </div>
-        <div className='contactContainer'>
-          <div>Send me a message</div>
+        <div className="messageContainer">
+          <div className="leftSide">
+            <div className="contactP">Your Message</div>
+          </div>
+          <input className="bigInput" type="text" />
         </div>
+        <button className="conactP">Send it</button>
       </div>
     </div>
   );
