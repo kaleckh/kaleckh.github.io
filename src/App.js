@@ -3,7 +3,7 @@ import { Twitter } from "./media/Twitter";
 import { Linkedin } from "./media/Linkedin";
 import { Insta } from "./media/Insta";
 
-import mainPhoto from "./photos/mainPhoto.jpg";
+
 import photo1 from "./photos//photo1.JPG";
 import photo2 from "./photos/photo2.jpg";
 import photo3 from "./photos/photo3.JPG";
@@ -11,7 +11,7 @@ import photo4 from "./photos/photo4.JPG";
 import photo5 from "./photos/photo5.JPG";
 import photo6 from "./photos/photo6.JPG";
 
-import instagram from "./photos/instagram.jpg";
+
 
 import firstProject from "./photos/firstProject.png";
 import React, { useRef } from "react";
