@@ -10,6 +10,7 @@ app.use(cors());
 app.use(bodyParser());
 const dotenv = require('dotenv');
 require('dotenv').config();
+require('postinstall')
 const CONNECTION_STRING = 'https://api.render.com/deploy/srv-cf7g7up4rebdrnnmq6jg?key=EDWYBgg-tww';
 
 massive({
