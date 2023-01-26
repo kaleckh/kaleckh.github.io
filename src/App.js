@@ -123,7 +123,7 @@ function App() {
           <div className="largerText text">Some things i've built</div>
           <div className="smallText hide">
             My GitHub link is
-            <a className="githubLink" href="https://github.com/kaleckh">
+             <a className="githubLink" href="https://github.com/kaleckh">
               Here
             </a>
           </div>
