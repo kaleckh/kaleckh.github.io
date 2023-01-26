@@ -1,7 +1,7 @@
 import "./App.css";
-import {Twitter} from './media/Twitter'
-import {Linkedin} from './media/Linkedin'
-import {Insta} from './media/Insta'
+import { Twitter } from "./media/Twitter";
+import { Linkedin } from "./media/Linkedin";
+import { Insta } from "./media/Insta";
 
 import mainPhoto from "./photos/mainPhoto.jpg";
 import photo1 from "./photos//photo1.JPG";
@@ -14,8 +14,8 @@ import photo6 from "./photos/photo6.JPG";
 import instagram from "./photos/instagram.jpg";
 
 import firstProject from "./photos/firstProject.png";
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import { Github } from "./media/Github";
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
       });
     },
     {
-      threshold: 0.5,
+      threshold: 0.8,
     }
   );
   images.forEach((image) => {
@@ -35,9 +35,27 @@ function App() {
   });
 
   const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-  
-    
+    emailjs
+      .sendForm(
+        "service_oax31j8",
+        "template_i93h3gc",
+        form.current,
+        "NIDXoMEDkdLg6tug7"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <div className="wholeScreen">
       <header className="header ">
@@ -59,21 +77,30 @@ function App() {
       <div id="section-1" className="section one">
         <div className="mainScreenLeft">
           <div className="socialsContainer">
-            <a href="https://twitter.com/kalehamm"><Twitter/></a>
-            <a href="https://www.instagram.com/kale_hamm/?next=%2F"><Insta/></a>
-            <a href="https://www.linkedin.com/in/kaleck-hamm-692a54a1/"><Linkedin/></a>
-            <a href="https://github.com/kaleckh"><Github/></a>
-            
-            
+            <a href="https://twitter.com/kalehamm">
+              <Twitter />
+            </a>
+            <a href="https://www.instagram.com/kale_hamm/?next=%2F">
+              <Insta />
+            </a>
+            <a href="https://www.linkedin.com/in/kaleck-hamm-692a54a1/">
+              <Linkedin />
+            </a>
+            <a href="https://github.com/kaleckh">
+              <Github />
+            </a>
+
             <div className="line"></div>
           </div>
         </div>
         <div className="mainScreenRight">
           <div className="sectionOneFont">Hi! im Kaleck</div>
+
           <div className="headerWord">
             I'm a full stack Software Engineer with extensive experience in
             sales and management
           </div>
+
           <div className="headerWord">React | Javascript | Node.js </div>
         </div>
       </div>
@@ -82,20 +109,20 @@ function App() {
           <div className="photoTitle">I Like To Take Photos And Travel</div>
         </div>
         <div className="sectionTwoPhotoContainer">
-          <img className="card" src={photo1} alt="" />
-          <img className="card" src={photo2} alt="" />
-          <img className="card" src={photo3} alt="" />
-          <img className="card" src={photo4} alt="" />
-          <img className="card" src={photo5} alt="" />
-          <img className="card" src={photo6} alt="" />
+          <img className="card " src={photo1} alt="" />
+          <img className="card " src={photo2} alt="" />
+          <img className="card hide" src={photo3} alt="" />
+          <img className="card  " src={photo4} alt="" />
+          <img className="card hide" src={photo5} alt="" />
+          <img className="card hide" src={photo6} alt="" />
         </div>
       </div>
 
       <div id="section-3" className="sectionFour four">
         <div className="workLeftContainer">
-          <div className="largerText">Some things i've built</div>
-          <div className="smallText">
-            My GitHub link is{" "}
+          <div className="largerText text">Some things i've built</div>
+          <div className="smallText hide">
+            My GitHub link is
             <a className="githubLink" href="https://github.com/kaleckh">
               Here
             </a>
@@ -103,12 +130,17 @@ function App() {
         </div>
 
         <div className="workRightContainer">
-          <img className="projects" src={firstProject} alt="" />
-          <img className="projects" src={firstProject} alt="" />
+          <img className="projects card" src={firstProject} alt="" />
+          <img className="projects card" src={firstProject} alt="" />
         </div>
       </div>
 
-      <div className="sectionThree three" id="section-4">
+      <form
+        ref={form}
+        onSubmit={sendEmail}
+        className="sectionThree three"
+        id="section-4"
+      >
         <div className="photoTitle">Send me a message!</div>
         <div className="smallText margin">
           Always willing to do freelance work
@@ -116,13 +148,13 @@ function App() {
         <div className="contactInputs">
           <div className="inputContainer">
             <div className="leftSide">
-              <div className="contactP">Your Name</div>
+              <div className="contactP">First name</div>
             </div>
-            <input className="contactInput" type="text" />
+            <input className="contactInput" name="from_name" type="text" />
           </div>
           <div className="inputContainer">
             <div className="leftSide">
-              <div className="contactP">Email Address</div>
+              <div className="contactP">Last name </div>
             </div>
             <input className="contactInput" type="text" />
           </div>
@@ -131,10 +163,12 @@ function App() {
           <div className="leftSide">
             <div className="contactP">Your Message</div>
           </div>
-          <input className="bigInput" type="text" />
+          <input name="message" className="bigInput" type="text" />
         </div>
-        <button className="conactP">Send it</button>
-      </div>
+        <button type="submit" className="conactP">
+          Send it
+        </button>
+      </form>
     </div>
   );
 }
