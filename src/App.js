@@ -15,9 +15,11 @@ import firstProject from "./photos/firstProject.png";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { Github } from "./media/Github";
+import { useState } from "react";
 
 function App() {
   const form = useRef();
+  const[sent, setSent] = useState(false)
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -92,13 +94,13 @@ function App() {
           <div className="photoTitle">I Like To Take Photos And Travel</div>
         </div>
         <div className="sectionTwoPhotoContainer">
-          <Image source={photo1}  />
+          <Image source={photo1} />
           <Image source={photo5} />
           <Image source={photo6} />
-          <Image source={photo2} new={'hide'}/>
+          <Image source={photo2} new={"hide"} />
           <Image source={photo3} new={"hide"} />
 
-          <Image source={photo4} new={'hide'}/>
+          <Image source={photo4} new={"hide"} />
         </div>
       </div>
 
@@ -114,7 +116,7 @@ function App() {
         </div>
 
         <div className="workRightContainer">
-          <Image source={firstProject} new={"workCard"}/>
+          <Image source={firstProject} new={"workCard"} />
 
           <img className="projects card smallCard" src={firstProject} alt="" />
         </div>
@@ -150,9 +152,10 @@ function App() {
           </div>
           <input name="message" className="bigInput" type="text" />
         </div>
-        <button type="submit" className="conactP">
+        <button onClick={() => {setSent(true)}} type="submit" className="conactP">
           Send it
         </button>
+        {sent && <div className="contactP">Message Sent!</div>}
       </form>
     </div>
   );
