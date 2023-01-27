@@ -20,6 +20,7 @@ import { Github } from "./media/Github";
 
 function App() {
   const images = document.querySelectorAll(".card");
+  console.log('kale')
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -27,7 +28,7 @@ function App() {
       });
     },
     {
-      threshold: 0.8,
+      threshold: 0.4,
     }
   );
   images.forEach((image) => {

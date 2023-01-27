@@ -320,15 +320,15 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 150px;
     flex-direction: column;
-    width: 35vw;
+    width: 100%;
 }
 
 .workRightContainer {
     width: 50vw;
     display: flex;
     align-items: center;
+    margin: 20px;
 }
 
 .projects {
