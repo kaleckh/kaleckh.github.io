@@ -21,6 +21,7 @@ import { Github } from "./media/Github";
 function App() {
   const images = document.querySelectorAll(".card");
   console.log('kale')
+  console.log('kale')
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
