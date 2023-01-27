@@ -134,7 +134,6 @@ button:hover {
 }
 
 .card {
-    opacity: 0;
     margin: 10px;
     filter: blur(5px);
     transition: all 1s;
@@ -384,6 +383,146 @@ a {
     display: flex;
     background-color: black;
     height: 80vh;
+}
+
+@media (width < 1300px) {
+    .card {
+        opacity: 1;
+        /* filter: blur(5px); */
+        transition: all 1s;
+        width: 450px;
+        height: 300px;
+        border-radius: 10px;
+        object-fit: cover;
+        opacity: 1;
+    }
+    .sectionTwoPhotoContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 100%;
+        padding-left: 25%;
+    }
+    .redSection {
+        height: 140vh;
+    }
+    .smallCard {
+        width: 300px;
+    }
+}
+
+@media (width < 1041px) {
+    .card {
+        opacity: 0;
+        margin: 10px;
+        filter: blur(5px);
+        transition: all 1s;
+        width: 275px;
+        height: 275px;
+        border-radius: 10px;
+        object-fit: cover;
+        opacity: 0;
+    }
+    .socialsContainer {
+        display: none;
+    }
+    .headerWords {
+        margin: 35px;
+        font-size: 30px;
+        font-weight: 200;
+        display: none;
+    }
+    .headerWord {
+        font-weight: 200;
+        font-size: 30px;
+        text-align: center;
+    }
+    .headerContainer {
+        width: 100vw;
+    }
+    .header {
+        width: 100%;
+    }
+    .divWordContainer {
+        width: 100vw;
+        justify-content: space-around;
+        margin: 5px;
+        height: 100%;
+        align-items: center;
+    }
+    .sectionOneFont {
+        font-size: 50px;
+    }
+    .mainScreenRight {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+    }
+    .section {
+        height: 80vh;
+    }
+    .photoTitle {
+        font-size: 30px;
+    }
+    .sectionTwoPhotoContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 100%;
+        padding-left: 25%;
+    }
+    .hide {
+        display: none;
+    }
+    .photoTitle {
+        text-align: center;
+    }
+    .workLeftContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .text {
+        text-align: center;
+    }
+    .sectionFour {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        padding-top: 200px;
+    }
+    .workRightContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .smallText {
+        font-size: 15px;
+    }
+    .contactInputs {
+        display: flex;
+        width: 75vw;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 200px;
+    }
+    .messageContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 75vw;
+    }
+    .largerText {
+        font-weight: 200;
+        font-size: 25px;
+    }
 }
 
 @media (width < 600px) {

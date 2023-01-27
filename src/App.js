@@ -20,8 +20,7 @@ import { Github } from "./media/Github";
 
 function App() {
   const images = document.querySelectorAll(".card");
-  console.log('kale')
-  console.log('kale')
+  console.log(images)
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -132,8 +131,8 @@ function App() {
         </div>
 
         <div className="workRightContainer">
-          <img className="projects card" src={firstProject} alt="" />
-          <img className="projects card" src={firstProject} alt="" />
+          <img className="projects card smallCard" src={firstProject} alt="" />
+          <img className="projects card smallCard" src={firstProject} alt="" />
         </div>
       </div>
 
