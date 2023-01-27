@@ -2,7 +2,7 @@ import "./App.css";
 import { Twitter } from "./media/Twitter";
 import { Linkedin } from "./media/Linkedin";
 import { Insta } from "./media/Insta";
-import Image from './Image.js'
+import Image from "./Image.js";
 
 import photo1 from "./photos//photo1.JPG";
 import photo2 from "./photos/photo2.jpg";
@@ -11,15 +11,12 @@ import photo4 from "./photos/photo4.JPG";
 import photo5 from "./photos/photo5.JPG";
 import photo6 from "./photos/photo6.JPG";
 
-
-
 import firstProject from "./photos/firstProject.png";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { Github } from "./media/Github";
 
 function App() {
-  
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -95,12 +92,13 @@ function App() {
           <div className="photoTitle">I Like To Take Photos And Travel</div>
         </div>
         <div className="sectionTwoPhotoContainer">
-          <Image source={photo1}/>
-          <Image source={photo2}/>
-          <Image source={photo3}/>
-          <Image source={photo4}/>
-          <Image source={photo5}/>
-          <Image source={photo6}/>
+          <Image source={photo1}  />
+          <Image source={photo5} />
+          <Image source={photo6} />
+          <Image source={photo2} new={'hide'}/>
+          <Image source={photo3} new={"hide"} />
+
+          <Image source={photo4} new={'hide'}/>
         </div>
       </div>
 
@@ -109,14 +107,15 @@ function App() {
           <div className="largerText text">Some things i've built</div>
           <div className="smallText hide">
             My GitHub link is
-             <a className="githubLink" href="https://github.com/kaleckh">
+            <a className="githubLink" href="https://github.com/kaleckh">
               Here
             </a>
           </div>
         </div>
 
         <div className="workRightContainer">
-          <img className="projects card smallCard" src={firstProject} alt="" />
+          <Image source={firstProject} new={"workCard"}/>
+
           <img className="projects card smallCard" src={firstProject} alt="" />
         </div>
       </div>

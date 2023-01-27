@@ -15,8 +15,13 @@ export default function Image(props) {
   }, [inView]);
 
   return (
-    <div>
-      <img className={cssClass} ref={ref} src={props.source} alt="" />
+    <div className="centered">
+      <img
+        className={`${cssClass} ${props.new}`}
+        ref={ref}
+        src={props.source}
+        alt=""
+      />
     </div>
   );
 }
