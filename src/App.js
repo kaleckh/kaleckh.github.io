@@ -2,7 +2,7 @@ import "./App.css";
 import { Twitter } from "./media/Twitter";
 import { Linkedin } from "./media/Linkedin";
 import { Insta } from "./media/Insta";
-
+import Image from './Image.js'
 
 import photo1 from "./photos//photo1.JPG";
 import photo2 from "./photos/photo2.jpg";
@@ -19,22 +19,7 @@ import emailjs from "@emailjs/browser";
 import { Github } from "./media/Github";
 
 function App() {
-  const images = document.querySelectorAll(".card");
-  console.log(images)
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        entry.target.classList.toggle("show", entry.isIntersecting);
-      });
-    },
-    {
-      threshold: 0.4,
-    }
-  );
-  images.forEach((image) => {
-    observer.observe(image);
-  });
-
+  
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -110,12 +95,12 @@ function App() {
           <div className="photoTitle">I Like To Take Photos And Travel</div>
         </div>
         <div className="sectionTwoPhotoContainer">
-          <img className="card " src={photo1} alt="" />
-          <img className="card " src={photo2} alt="" />
-          <img className="card hide" src={photo3} alt="" />
-          <img className="card  " src={photo4} alt="" />
-          <img className="card hide" src={photo5} alt="" />
-          <img className="card hide" src={photo6} alt="" />
+          <Image source={photo1}/>
+          <Image source={photo2}/>
+          <Image source={photo3}/>
+          <Image source={photo4}/>
+          <Image source={photo5}/>
+          <Image source={photo6}/>
         </div>
       </div>
 
