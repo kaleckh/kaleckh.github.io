@@ -24,17 +24,20 @@ function App() {
     /* Optional options */
     threshold: 0.7,
   });
-  // const { refTop, inViewTop } = useInView({
-  //   /* Optional options */
-  //   threshold: 0.7,
-  // });
+  const { ref: refTop, inView: inViewTop } = useInView({
+    /* Optional options */
+    threshold: 0.7,
+  });
   const [cssClass, setCssClass] = useState("");
+  const [cssTopClass, setCssTopClass] = useState("");
   // const [cssTopClass, setCssTopClass] = useState("");
   useEffect(() => {
     if (inView) {
       setCssClass("showTrans");
-    } 
-  }, [inView]);
+    } else if(inViewTop) {
+      setCssTopClass("showTrans");
+    }
+  }, [inView, inViewTop]);
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -120,7 +123,7 @@ function App() {
       </div>
 
       <div id="section-3" className="sectionFour four">
-        <div className={`workLeftContainer ${cssClass}`}>
+        <div className={`workLeftContainer hideTransLeft ${cssClass}`} ref={ref}>
           <div className="largerText text">Some things i've built</div>
           <div className="smallText hide">
             My GitHub link is
@@ -137,9 +140,14 @@ function App() {
         </div>
       </div>
       <div className="sectionFive">
-        <div id="skills" className="skills">Skills</div>
+        <div id="skills" className="skills">
+          Skills
+        </div>
         <div className="skillsNameContainer">
-          <div className={`frontContainer hideTransBottom ${cssClass}`} ref={ref}>
+          <div
+            className={`frontContainer hideTransBottom ${cssTopClass}`}
+            ref={refTop}
+          >
             <div className="frontend">Frontend</div>
             <div className="listContainer">
               <div className={`leftList`}>
@@ -154,7 +162,10 @@ function App() {
               </div>
             </div>
           </div>
-          <div className={`frontContainer hideTransTop ${cssClass}`} ref={ref}>
+          <div
+            className={`frontContainer hideTransTop ${cssTopClass}`}
+            ref={refTop}
+          >
             <div className="frontend">Backend</div>
             <div className="listContainer">
               <div className="leftList">
@@ -219,8 +230,12 @@ function App() {
           <a href="#section-2" className="footerSection">
             Photos
           </a>
-          <a href="#skills" className="footerSection">Skills</a>
-          <a href="#section-3" className="footerSection">Projects</a>
+          <a href="#skills" className="footerSection">
+            Skills
+          </a>
+          <a href="#section-3" className="footerSection">
+            Projects
+          </a>
         </div>
       </div>
     </div>
