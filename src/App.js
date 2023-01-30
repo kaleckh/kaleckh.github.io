@@ -132,7 +132,7 @@ function App() {
         </div>
       </div>
       <div className="sectionFive">
-        <div className="skills">Skills</div>
+        <div id="skills" className="skills">Skills</div>
         <div className="skillsNameContainer">
           <div className="frontContainer">
             <div className="frontend">Frontend</div>
@@ -209,12 +209,14 @@ function App() {
         {sent && <div className="contactP">Message Sent!</div>}
       </form>
       <div className="footer">
-          <div>Kaleck</div>
-          <div>
-            <div>Photos</div>
-            <div>Skills</div>
-            <div>Projects</div>
-          </div>
+        <div className="name">Kaleck</div>
+        <div className="footerSections">
+          <a href="#section-2" className="footerSection">
+            Photos
+          </a>
+          <a href="#skills" className="footerSection">Skills</a>
+          <a href="#section-3" className="footerSection">Projects</a>
+        </div>
       </div>
     </div>
   );

@@ -291,6 +291,7 @@ a {
 .githubLink {
     color: white;
     text-decoration: underline;
+    margin: 8px;
 }
 
 .four {
@@ -361,12 +362,6 @@ a {
 .griditem {
     height: 50px;
     text-align: center;
-}
-
-.footer {
-    display: flex;
-    background-color: black;
-    height: 80vh;
 }
 
 .sectionFive {
@@ -450,6 +445,32 @@ li {
 
 .show {
     opacity: 1;
+}
+
+.footerSections {
+    display: flex;
+    font-weight: 200;
+    justify-content: space-around;
+    width: 20%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    height: 20vh;
+    border-top: 1px solid white
+}
+
+.name {
+    font-weight: 400;
+    margin: 20px;
+    font-size: 25px;
+}
+
+.footerSection {
+    font-size: 20px;
 }
 
 @media (width < 1300px) {
