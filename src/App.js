@@ -10,16 +10,26 @@ import photo3 from "./photos/photo3.JPG";
 import photo4 from "./photos/photo4.JPG";
 import photo5 from "./photos/photo5.JPG";
 import photo6 from "./photos/photo6.JPG";
-
+import { useInView } from "react-intersection-observer";
 import firstProject from "./photos/firstProject.png";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { Github } from "./media/Github";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
   const form = useRef();
-  const[sent, setSent] = useState(false)
+  const [sent, setSent] = useState(false);
+  const { ref, inView } = useInView({
+    /* Optional options */
+    threshold: 0.7,
+  });
+  const [cssClass, setCssClass] = useState("");
+  useEffect(() => {
+    if (inView) {
+      setCssClass("show");
+    }
+  }, [inView]);
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -121,6 +131,41 @@ function App() {
           <img className="projects card smallCard" src={firstProject} alt="" />
         </div>
       </div>
+      <div className="sectionFive">
+        <div className="skills">Skills</div>
+        <div className="skillsNameContainer">
+          <div className="frontContainer">
+            <div className="frontend">Frontend</div>
+            <div className="listContainer">
+              <div className="leftList">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </div>
+              <div className="rightList">
+                <li>Git</li>
+                <li>React</li>
+                <li>Bootstrap</li>
+              </div>
+            </div>
+          </div>
+          <div className="frontContainer">
+            <div className="frontend">Backend</div>
+            <div className="listContainer">
+              <div className="leftList">
+                <li>Node.Js</li>
+                <li>MySQL</li>
+                <li>SQL</li>
+              </div>
+              <div className="rightList">
+                <li>Docker</li>
+                <li>Postgres</li>
+                <li className="none"></li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <form
         ref={form}
@@ -152,11 +197,25 @@ function App() {
           </div>
           <input name="message" className="bigInput" type="text" />
         </div>
-        <button onClick={() => {setSent(true)}} type="submit" className="conactP">
+        <button
+          onClick={() => {
+            setSent(true);
+          }}
+          type="submit"
+          className="conactP"
+        >
           Send it
         </button>
         {sent && <div className="contactP">Message Sent!</div>}
       </form>
+      <div className="footer">
+          <div>Kaleck</div>
+          <div>
+            <div>Photos</div>
+            <div>Skills</div>
+            <div>Projects</div>
+          </div>
+      </div>
     </div>
   );
 }
