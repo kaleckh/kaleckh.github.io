@@ -365,7 +365,7 @@ a {
 }
 
 .sectionFive {
-    height: 70vh;
+    height: 60vh;
     background-color: black;
     color: white;
     display: flex;
@@ -471,6 +471,29 @@ li {
 
 .footerSection {
     font-size: 20px;
+}
+
+.hideTransLeft {
+    opacity: 0;
+    transform: translateX(-10%);
+    transition: all .5s;
+}
+
+.hideTransBottom {
+    opacity: 0;
+    transform: translateY(-30%);
+    transition: all 1s;
+}
+
+.hideTransTop {
+    opacity: 0;
+    transform: translateY(30%);
+    transition: all 1s;
+}
+
+.showTrans {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 @media (width < 1300px) {
@@ -655,11 +678,12 @@ li {
         border-radius: 10px;
     }
     .sectionFive {
-        height: 80vh;
+        height: 70vh;
         background-color: black;
         color: white;
         display: flex;
         align-items: center;
+        justify-content: center;
         flex-direction: column;
     }
 }

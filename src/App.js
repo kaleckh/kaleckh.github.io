@@ -10,26 +10,31 @@ import photo3 from "./photos/photo3.JPG";
 import photo4 from "./photos/photo4.JPG";
 import photo5 from "./photos/photo5.JPG";
 import photo6 from "./photos/photo6.JPG";
-// import { useInView } from "react-intersection-observer";
+import { useInView } from "react-intersection-observer";
 import firstProject from "./photos/firstProject.png";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { Github } from "./media/Github";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
   const form = useRef();
   const [sent, setSent] = useState(false);
-  // const { ref, inView } = useInView({
+  const { ref, inView } = useInView({
+    /* Optional options */
+    threshold: 0.7,
+  });
+  // const { refTop, inViewTop } = useInView({
   //   /* Optional options */
   //   threshold: 0.7,
   // });
-  // const [cssClass, setCssClass] = useState("");
-  // useEffect(() => {
-  //   if (inView) {
-  //     setCssClass("show");
-  //   }
-  // }, [inView]);
+  const [cssClass, setCssClass] = useState("");
+  // const [cssTopClass, setCssTopClass] = useState("");
+  useEffect(() => {
+    if (inView) {
+      setCssClass("showTrans");
+    } 
+  }, [inView]);
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -115,7 +120,7 @@ function App() {
       </div>
 
       <div id="section-3" className="sectionFour four">
-        <div className="workLeftContainer">
+        <div className={`workLeftContainer ${cssClass}`}>
           <div className="largerText text">Some things i've built</div>
           <div className="smallText hide">
             My GitHub link is
@@ -134,10 +139,10 @@ function App() {
       <div className="sectionFive">
         <div id="skills" className="skills">Skills</div>
         <div className="skillsNameContainer">
-          <div className="frontContainer">
+          <div className={`frontContainer hideTransBottom ${cssClass}`} ref={ref}>
             <div className="frontend">Frontend</div>
             <div className="listContainer">
-              <div className="leftList">
+              <div className={`leftList`}>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
@@ -149,7 +154,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="frontContainer">
+          <div className={`frontContainer hideTransTop ${cssClass}`} ref={ref}>
             <div className="frontend">Backend</div>
             <div className="listContainer">
               <div className="leftList">
