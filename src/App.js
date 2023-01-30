@@ -10,26 +10,26 @@ import photo3 from "./photos/photo3.JPG";
 import photo4 from "./photos/photo4.JPG";
 import photo5 from "./photos/photo5.JPG";
 import photo6 from "./photos/photo6.JPG";
-import { useInView } from "react-intersection-observer";
+// import { useInView } from "react-intersection-observer";
 import firstProject from "./photos/firstProject.png";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { Github } from "./media/Github";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 function App() {
   const form = useRef();
   const [sent, setSent] = useState(false);
-  const { ref, inView } = useInView({
-    /* Optional options */
-    threshold: 0.7,
-  });
-  const [cssClass, setCssClass] = useState("");
-  useEffect(() => {
-    if (inView) {
-      setCssClass("show");
-    }
-  }, [inView]);
+  // const { ref, inView } = useInView({
+  //   /* Optional options */
+  //   threshold: 0.7,
+  // });
+  // const [cssClass, setCssClass] = useState("");
+  // useEffect(() => {
+  //   if (inView) {
+  //     setCssClass("show");
+  //   }
+  // }, [inView]);
   const sendEmail = (e) => {
     e.preventDefault();
 
