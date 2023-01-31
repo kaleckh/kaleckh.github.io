@@ -627,7 +627,7 @@ li {
 
 @media (width < 900px) {
     .footerSections {
-        width: 50%;
+        width: 60%;
     }
     .sectionTwoPhotoContainer {
         display: grid;
