@@ -626,6 +626,9 @@ li {
 }
 
 @media (width < 900px) {
+    .footerSections {
+        width: 50%;
+    }
     .sectionTwoPhotoContainer {
         display: grid;
         grid-template-columns: 1fr 1fr;
