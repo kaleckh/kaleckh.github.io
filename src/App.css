@@ -12,6 +12,11 @@ html {
     display: fixed;
 }
 
+.subHeaderWord {
+    font-weight: 150;
+    font-size: 25px;
+}
+
 .headerWords {
     margin: 25px;
     font-weight: 200;
@@ -43,7 +48,8 @@ html {
 }
 
 .headerWord {
-    font-weight: 200;
+    font-weight: 300;
+    font-size: 35px;
 }
 
 .headerContainer {
@@ -116,8 +122,8 @@ button:hover {
 }
 
 .sectionOneFont {
-    font-size: 120px;
-    font-weight: 200;
+    font-size: 110px;
+    font-weight: 250;
     margin-top: 150px;
 }
 
@@ -460,7 +466,7 @@ li {
     align-items: center;
     background-color: black;
     height: 20vh;
-    border-top: 1px solid white
+    border-top: 1px solid white;
 }
 
 .name {
@@ -476,7 +482,7 @@ li {
 .hideTransLeft {
     opacity: 0;
     transform: translateX(-10%);
-    transition: all .5s;
+    transition: all 0.5s;
 }
 
 .hideTransBottom {
@@ -533,6 +539,10 @@ li {
     .socialsContainer {
         display: none;
     }
+    .subHeaderWord {
+        font-weight: 150;
+        font-size: 20px;
+    }
     .headerWords {
         margin: 35px;
         font-size: 30px;
@@ -541,7 +551,7 @@ li {
     }
     .headerWord {
         font-weight: 200;
-        font-size: 30px;
+        font-size: 25px;
         text-align: center;
     }
     .headerContainer {
@@ -714,7 +724,7 @@ li {
     }
     .headerWord {
         font-weight: 200;
-        font-size: 20px;
+        font-size: 30px;
         text-align: center;
     }
     .headerContainer {
@@ -810,7 +820,7 @@ li {
 @media (width < 600px) {
     .headerWord {
         font-weight: 200;
-        font-size: 15px;
+        font-size: 25px;
         text-align: center;
     }
     .card {

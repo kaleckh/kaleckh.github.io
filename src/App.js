@@ -34,7 +34,7 @@ function App() {
   useEffect(() => {
     if (inView) {
       setCssClass("showTrans");
-    } else if(inViewTop) {
+    } else if (inViewTop) {
       setCssTopClass("showTrans");
     }
   }, [inView, inViewTop]);
@@ -99,12 +99,8 @@ function App() {
         <div className="mainScreenRight">
           <div className="sectionOneFont">Hi! im Kaleck</div>
 
-          <div className="headerWord">
-            I'm a full stack Software Engineer with extensive experience in
-            sales and management
-          </div>
-
-          <div className="headerWord">React | Javascript | Node.js </div>
+          <div className="headerWord">I'm a full stack Software Engineer</div>
+          <div className="subHeaderWord">(looking for a job btw)</div>
         </div>
       </div>
       <div id="section-2" className="redSection two">
@@ -123,7 +119,10 @@ function App() {
       </div>
 
       <div id="section-3" className="sectionFour four">
-        <div className={`workLeftContainer hideTransLeft ${cssClass}`} ref={ref}>
+        <div
+          className={`workLeftContainer hideTransLeft ${cssClass}`}
+          ref={ref}
+        >
           <div className="largerText text">Some things i've built</div>
           <div className="smallText hide">
             My GitHub link is
