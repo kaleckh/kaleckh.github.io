@@ -150,6 +150,11 @@ button:hover {
     filter: blur(5px);
 }
 
+.card.show {
+    filter: blur(0px);
+    opacity: 1;
+}
+
 .twitter {
     height: 50px;
     width: 50px;
@@ -160,11 +165,6 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.card.show {
-    filter: blur(0px);
-    opacity: 1;
 }
 
 .twoTitle {

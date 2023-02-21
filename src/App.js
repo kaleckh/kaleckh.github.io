@@ -100,7 +100,6 @@ function App() {
           <div className="sectionOneFont">Hi! im Kaleck</div>
 
           <div className="headerWord">I'm a full stack Software Engineer</div>
-          <div className="subHeaderWord">(looking for a job btw)</div>
         </div>
       </div>
       <div id="section-2" className="redSection two">
