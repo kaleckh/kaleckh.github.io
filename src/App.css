@@ -155,6 +155,29 @@ button:hover {
     opacity: 1;
 }
 
+.small {
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.acontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 15vh;
+}
+
+.project {
+    margin: 10px;
+    transition: all 1s;
+    width: 600px;
+    height: 350px;
+    border-radius: 15px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
 .twitter {
     height: 50px;
     width: 50px;
@@ -314,10 +337,20 @@ a {
 }
 
 .workRightContainer {
-    width: 50vw;
+    width: 100%;
     display: flex;
     align-items: center;
     margin: 20px;
+    height: 100%;
+    justify-content: center;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 53%;
 }
 
 .projects {
@@ -326,6 +359,10 @@ a {
     width: 250px;
     object-fit: cover;
     margin: 10px;
+}
+
+.project {
+    object-fit: contain;
 }
 
 .bottomProject {
@@ -482,6 +519,12 @@ li {
 .hideTransLeft {
     opacity: 0;
     transform: translateX(-10%);
+    transition: all 0.5s;
+}
+
+.hideTransRight {
+    opacity: 0;
+    transform: translateX(10%);
     transition: all 0.5s;
 }
 

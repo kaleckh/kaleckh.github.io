@@ -28,14 +28,21 @@ function App() {
     /* Optional options */
     threshold: 0.7,
   });
+  const { ref: refPhoto, inView: inViewPhoto } = useInView({
+    /* Optional options */
+    threshold: 0.7,
+  });
   const [cssClass, setCssClass] = useState("");
   const [cssTopClass, setCssTopClass] = useState("");
+  const [cssPhoto, setCssPhoto] = useState("");
   // const [cssTopClass, setCssTopClass] = useState("");
   useEffect(() => {
     if (inView) {
       setCssClass("showTrans");
     } else if (inViewTop) {
       setCssTopClass("showTrans");
+    } else if (inViewPhoto) {
+      setCssPhoto("showTrans");
     }
   }, [inView, inViewTop]);
   const sendEmail = (e) => {
@@ -122,19 +129,24 @@ function App() {
           className={`workLeftContainer hideTransLeft ${cssClass}`}
           ref={ref}
         >
-          <div className="largerText text">Some things i've built</div>
-          <div className="smallText hide">
-            My GitHub link is
-            <a className="githubLink" href="https://github.com/kaleckh">
-              Here
-            </a>
+          <div className="acontainer">
+            <div className="largerText text">Some things i've built</div>
+            <div className="smallText hide">
+              My GitHub link is
+              <a className="githubLink" href="https://github.com/kaleckh">
+                Here
+              </a>
+            </div>
+            <div className="small">Click the photos to see projects</div>
           </div>
         </div>
 
-        <div className="workRightContainer">
-          <Image source={firstProject} new={"workCard"} />
-
-          <img className="projects card smallCard" src={firstProject} alt="" />
+        <div ref={refPhoto} className={`workRightContainer  ${cssPhoto}`}>
+          <div className="center">
+            <a href="https://kaleidoscopic-taffy-fa8f99.netlify.app/">
+              <img src={firstProject} new={"workCard"} className="project" />
+            </a>
+          </div>
         </div>
       </div>
       <div className="sectionFive">
