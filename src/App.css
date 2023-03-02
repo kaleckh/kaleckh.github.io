@@ -897,4 +897,17 @@ li {
         font-weight: 350;
         font-size: 23px;
     }
+    .project {
+        width: 400px;
+    }
+    .sectionFour {
+        height: 37vh;
+        padding-bottom: 220px;
+    }
+    .largerText {
+        font-size: 35px;
+    }
+    .small {
+        font-size: 20px;
+    }
 }
