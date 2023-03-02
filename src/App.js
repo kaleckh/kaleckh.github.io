@@ -113,8 +113,7 @@ function App() {
             websites and applications, I've honed my skills in technologies such
             as JavaScript, React, Node.js, and PostgreSQL. I'm a quick learner,
             an excellent problem solver, and I'm always looking for
-            opportunities to grow and expand my skill set. When I'm not coding,
-            you can find me hiking in the mountains or enjoying a good book.
+            opportunities to grow and expand my skill set.
           </div>
         </div>
       </div>
