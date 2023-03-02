@@ -163,7 +163,7 @@ button:hover {
 .intro {
     text-align: center;
     line-height: 1.5;
-    padding: 20px;
+    padding: 25px;
     font-size: 25px;
     font-weight: 200;
     width: 75%;
@@ -888,5 +888,13 @@ li {
     }
     li {
         font-size: 17px;
+    }
+    .intro {
+        font-size: 17px;
+        font-weight: 200;
+    }
+    .headerWord {
+        font-weight: 350;
+        font-size: 23px;
     }
 }
