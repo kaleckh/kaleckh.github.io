@@ -160,6 +160,15 @@ button:hover {
     font-weight: 200;
 }
 
+.intro {
+    text-align: center;
+    line-height: 1.5;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    width: 75%;
+}
+
 .acontainer {
     display: flex;
     flex-direction: column;

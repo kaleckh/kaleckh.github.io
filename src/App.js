@@ -107,6 +107,15 @@ function App() {
           <div className="sectionOneFont">Hi! im Kaleck</div>
 
           <div className="headerWord">I'm a full stack Software Engineer</div>
+          <div className="intro">
+            Hi, I'm Kaleck Hamm, a full-stack web developer based in Orem, Utah.
+            With a passion for creating intuitive and visually appealing
+            websites and applications, I've honed my skills in technologies such
+            as JavaScript, React, Node.js, and PostgreSQL. I'm a quick learner,
+            an excellent problem solver, and I'm always looking for
+            opportunities to grow and expand my skill set. When I'm not coding,
+            you can find me hiking in the mountains or enjoying a good book.
+          </div>
         </div>
       </div>
       <div id="section-2" className="redSection two">
