@@ -161,7 +161,7 @@ function App() {
           <div className={"picRow"}>
             <div className={`workRightContainer`}>
               <div className="center">
-                <a href="https://6418d64222afd100084f0687--verdant-meerkat-e709d5.netlify.app/">
+                <a href="https://641b3898c35b8200099f4327--verdant-meerkat-e709d5.netlify.app/">
                   <img
                     src={firstProject}
                     new={"workCard"}
@@ -198,7 +198,7 @@ function App() {
             </div>
             <div className={`workRightContainer`}>
               <div className="center">
-                <a href="https://6412071903b3cf00092e85c0--flourishing-gelato-78f8df.netlify.app/">
+                <a href="https://6418841f980b2d0008e8fc21--flourishing-gelato-78f8df.netlify.app/">
                   <img src={second} new={"workCard"} className="project" />
                 </a>
               </div>
