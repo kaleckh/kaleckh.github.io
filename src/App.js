@@ -3,6 +3,7 @@ import { Twitter } from "./media/Twitter";
 import { Linkedin } from "./media/Linkedin";
 import { Insta } from "./media/Insta";
 import Image from "./Image.js";
+import second from "./photos/second.png";
 
 import photo1 from "./photos//photo1.JPG";
 import photo2 from "./photos/photo2.jpg";
@@ -30,12 +31,17 @@ function App() {
   });
   const { ref: refPhoto, inView: inViewPhoto } = useInView({
     /* Optional options */
-    threshold: 0.7,
+    threshold: 1,
+  });
+  const { ref: refPhotoLeft, inView: inViewPhotoLeft } = useInView({
+    /* Optional options */
+    threshold: 1,
   });
   const [cssClass, setCssClass] = useState("");
   const [cssTopClass, setCssTopClass] = useState("");
   const [cssPhoto, setCssPhoto] = useState("");
-  // const [cssTopClass, setCssTopClass] = useState("");
+  const [cssPhotoLeft, setCssPhotoLeft] = useState("");
+
   useEffect(() => {
     if (inView) {
       setCssClass("showTrans");
@@ -43,6 +49,9 @@ function App() {
       setCssTopClass("showTrans");
     } else if (inViewPhoto) {
       setCssPhoto("showTrans");
+    } else if (inViewPhotoLeft) {
+      setCssPhotoLeft("showTrans");
+      debugger
     }
   }, [inView, inViewTop]);
   const sendEmail = (e) => {
@@ -148,12 +157,52 @@ function App() {
             <div className="small">Click the photos to see projects</div>
           </div>
         </div>
-
-        <div ref={refPhoto} className={`workRightContainer  ${cssPhoto}`}>
-          <div className="center">
-            <a href="https://6418d64222afd100084f0687--verdant-meerkat-e709d5.netlify.app/">
-              <img src={firstProject} new={"workCard"} className="project" />
-            </a>
+        <div className={"column"}>
+          <div className={"picRow"}>
+            <div className={`workRightContainer`}>
+              <div className="center">
+                <a href="https://6418d64222afd100084f0687--verdant-meerkat-e709d5.netlify.app/">
+                  <img
+                    src={firstProject}
+                    new={"workCard"}
+                    className="project"
+                  />
+                </a>
+              </div>
+            </div>
+            <div className="middle">
+              <div
+                ref={refPhoto}
+                className={`stuff hideTransRight ${cssPhoto}`}
+              >
+                <div className="title">Travel Site</div>
+                <div className="paragraph">
+                  A full stack social platform that connects travellers with
+                  similar destinations
+                </div>
+                <div className="small">
+                  React.js | AWS | Javascript | Express | Node.js
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={"picRowSolar"}>
+            <div  className={`middle hideTransLeft ${cssPhoto}`}>
+              <div className={"stuff"}>
+                <div className="title">Solar DIY</div>
+                <div className="paragraph">
+                  Solar platform that custom builds solar systems for your home
+                </div>
+                <div className="small">React.js | Javascript | HTML | CSS</div>
+              </div>
+            </div>
+            <div className={`workRightContainer`}>
+              <div className="center">
+                <a href="https://6412071903b3cf00092e85c0--flourishing-gelato-78f8df.netlify.app/">
+                  <img src={second} new={"workCard"} className="project" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
