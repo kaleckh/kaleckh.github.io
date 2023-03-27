@@ -82,7 +82,6 @@ html {
 
 .picRow {
     display: flex;
-    width: 90%;
 }
 
 .middle {
@@ -804,6 +803,9 @@ li {
         object-fit: cover;
         opacity: 0;
     }
+    .picRow {
+        flex-direction: column;
+    }
     .socialsContainer {
         display: none;
     }
@@ -873,13 +875,17 @@ li {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 100vh;
+        height: 110vh;
         width: 100vw;
-        padding-top: 200px;
+    }
+    .paragraph {
+        width: 70%;
+        font-size: 20px;
     }
     .workRightContainer {
         width: 100%;
         display: flex;
+        margin: 0px;
         flex-direction: column;
         align-items: center;
     }
@@ -904,7 +910,10 @@ li {
         font-size: 30px;
     }
     .redSection {
-        height: 160vh;
+        height: 140vh;
+    }
+    .small {
+        font-size: 15px;
     }
 }
 
@@ -913,6 +922,9 @@ li {
         font-weight: 200;
         font-size: 25px;
         text-align: center;
+    }
+    .picRowSolar {
+        flex-direction: column-reverse;
     }
     .card {
         opacity: 0;
@@ -937,16 +949,14 @@ li {
         font-size: 23px;
     }
     .project {
-        width: 400px;
+        width: 350px;
+        height: 250px;
     }
     .sectionFour {
-        height: 37vh;
         padding-bottom: 220px;
+        padding-top: 0px;
     }
     .largerText {
         font-size: 35px;
-    }
-    .small {
-        font-size: 20px;
     }
 }
