@@ -565,13 +565,11 @@ li {
 
 .hideTransLeft {
     opacity: 0;
-    transform: translateX(-10%);
     transition: all 0.5s;
 }
 
 .hideTransRight {
     opacity: 0;
-    transform: translateX(10%);
     transition: all 0.5s;
 }
 
