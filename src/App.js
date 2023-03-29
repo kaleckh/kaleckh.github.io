@@ -173,7 +173,7 @@ function App() {
             <div className="middle">
               <div
                 ref={refPhoto}
-                className={`stuff hideTransRight ${cssPhoto}`}
+                className={`stuff hideTrans ${cssPhoto}`}
               >
                 <div className="title">Travel Site</div>
                 <div className="paragraph">
@@ -187,7 +187,7 @@ function App() {
             </div>
           </div>
           <div className={"picRowSolar"}>
-            <div  className={`middle hideTransLeft ${cssPhoto}`}>
+            <div  className={`middle hideTrans ${cssPhoto}`}>
               <div className={"stuff"}>
                 <div className="title">Solar DIY</div>
                 <div className="paragraph">

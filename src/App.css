@@ -82,6 +82,7 @@ html {
 
 .picRow {
     display: flex;
+    width: 90%;
 }
 
 .middle {
@@ -565,11 +566,18 @@ li {
 
 .hideTransLeft {
     opacity: 0;
+    transform: translateX(-10%);
+    transition: all 0.5s;
+}
+
+.hideTrans {
+    opacity: 0;
     transition: all 0.5s;
 }
 
 .hideTransRight {
     opacity: 0;
+    transform: translateX(10%);
     transition: all 0.5s;
 }
 
@@ -803,6 +811,7 @@ li {
     }
     .picRow {
         flex-direction: column;
+        width: 100%;
     }
     .socialsContainer {
         display: none;
