@@ -5,14 +5,14 @@ import { Insta } from "./media/Insta";
 import Image from "./Image.js";
 import second from "./photos/second.png";
 
-import photo1 from "./photos//photo1.JPG";
-import photo2 from "./photos/photo2.jpg";
-import photo3 from "./photos/photo3.JPG";
-import photo4 from "./photos/photo4.JPG";
-import photo5 from "./photos/photo5.JPG";
-import photo6 from "./photos/photo6.JPG";
+import photo1 from "./photos//photo1.webp";
+import photo2 from "./photos/photo2.webp";
+import photo3 from "./photos/photo3.webp";
+import photo4 from "./photos/photo4.webp";
+import photo5 from "./photos/photo5.webp";
+import photo6 from "./photos/photo6.webp";
 import { useInView } from "react-intersection-observer";
-import firstProject from "./photos/firstProject.png";
+import firstProject from "./photos/copiersutah.webp";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { Github } from "./media/Github";
@@ -161,7 +161,7 @@ function App() {
           <div className={"picRow"}>
             <div className={`workRightContainer`}>
               <div className="center">
-                <a href="https://642083ef607aa8000836a9a8--verdant-meerkat-e709d5.netlify.app/">
+                <a target="_blank" href="https://copiersutah.com/home">
                   <img
                     src={firstProject}
                     new={"workCard"}
@@ -175,13 +175,12 @@ function App() {
                 ref={refPhoto}
                 className={`stuff hideTrans ${cssPhoto}`}
               >
-                <div className="title">Travel Site</div>
+                <div className="title">CopiersUtah.com</div>
                 <div className="paragraph">
-                  A full stack social platform that connects travellers with
-                  similar destinations
+                  A platform that showcases, compares, and generates valuable leads for copiers, with a user-friendly experience that simplifies the copier purchasing process.
                 </div>
                 <div className="small">
-                  React.js | AWS | Javascript | Express | Node.js
+                  Next.js | Omnis | Javascript | CSS | HTML
                 </div>
               </div>
             </div>
@@ -243,7 +242,8 @@ function App() {
               <div className="rightList">
                 <li>Docker</li>
                 <li>Postgres</li>
-                <li className="none"></li>
+                <li>Prisma</li>
+                
               </div>
             </div>
           </div>
