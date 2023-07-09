@@ -74,7 +74,7 @@ html {
 
 .mainScreenLeft {
     display: flex;
-    height: 85vh;
+    height: 600px;
     padding-left: 60px;
     position: fixed;
     align-items: flex-end;
@@ -107,6 +107,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: fit-content;
     flex-direction: column;
 }
 
@@ -121,8 +122,9 @@ html {
 
 .section {
     display: flex;
-    height: 100vh;
+    height: fit-content;
     width: 100vw;
+    padding-bottom: 50px;
 }
 
 .sectionFour {
