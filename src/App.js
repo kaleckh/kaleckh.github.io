@@ -1,7 +1,7 @@
 import "./App.css";
 import { Twitter } from "./media/Twitter";
 import { Linkedin } from "./media/Linkedin";
-import { Insta } from "./media/Insta";
+import { Insta } from "./photos/Insta";
 import Image from "./Image.js";
 import second from "./photos/second.png";
 
@@ -96,16 +96,16 @@ function App() {
       <div id="section-1" className="section one">
         <div className="mainScreenLeft">
           <div className="socialsContainer">
-            <a href="https://twitter.com/kalehamm">
+            <a target={'_blank'} href="https://twitter.com/kalehamm">
               <Twitter />
             </a>
-            <a href="https://www.instagram.com/kale_hamm/?next=%2F">
+            <a target={'_blank'} href="https://www.instagram.com/kale_hamm/?next=%2F">
               <Insta />
             </a>
-            <a href="https://www.linkedin.com/in/kaleck-hamm-692a54a1/">
+            <a target={'_blank'} href="https://www.linkedin.com/in/kaleck-hamm-692a54a1/">
               <Linkedin />
             </a>
-            <a href="https://github.com/kaleckh">
+            <a target={'_blank'} href="https://github.com/kaleckh">
               <Github />
             </a>
 
@@ -150,7 +150,7 @@ function App() {
             <div className="largerText text">Some things i've built</div>
             <div className="smallText hide">
               My GitHub link is
-              <a className="githubLink" href="https://github.com/kaleckh">
+              <a className="githubLink" target={'_blank'} href="https://github.com/kaleckh">
                 Here
               </a>
             </div>
@@ -186,7 +186,7 @@ function App() {
             </div>
           </div>
           <div className={"picRowSolar"}>
-            <div  className={`middle hideTrans ${cssPhoto}`}>
+            <div className={`middle hideTrans ${cssPhoto}`}>
               <div className={"stuff"}>
                 <div className="title">Solar DIY</div>
                 <div className="paragraph">
@@ -243,7 +243,7 @@ function App() {
                 <li>Docker</li>
                 <li>Postgres</li>
                 <li>Prisma</li>
-                
+
               </div>
             </div>
           </div>
