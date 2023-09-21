@@ -12,7 +12,7 @@ import photo4 from "./photos/photo4.webp";
 import photo5 from "./photos/photo5.webp";
 import photo6 from "./photos/photo6.webp";
 import { useInView } from "react-intersection-observer";
-import firstProject from "./photos/copiersutah.webp";
+import firstProject from "./photos/copiers.webp";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { Github } from "./media/Github";
