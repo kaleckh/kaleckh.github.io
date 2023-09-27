@@ -161,7 +161,7 @@ function App() {
           <div className={"picRow"}>
             <div className={`workRightContainer`}>
               <div className="center">
-                <a target="_blank" href="https://copiers-utah-next13-44pr.vercel.app/">
+                <a target="_blank" href="https://copiersutah.com/">
                   <img
                     src={firstProject}
                     new={"workCard"}
