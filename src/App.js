@@ -4,7 +4,6 @@ import { Linkedin } from "./media/Linkedin";
 import { Insta } from "./photos/Insta";
 import Image from "./Image.js";
 import second from "./photos/second.png";
-
 import photo1 from "./photos//photo1.webp";
 import photo2 from "./photos/photo2.webp";
 import photo3 from "./photos/photo3.webp";
@@ -197,7 +196,7 @@ function App() {
             </div>
             <div className={`workRightContainer`}>
               <div className="center">
-                <a href="https://6418841f980b2d0008e8fc21--flourishing-gelato-78f8df.netlify.app/">
+                <a target="_blank" href="https://641c85e1bf71d90dd9df96d8--flourishing-gelato-78f8df.netlify.app/">
                   <img src={second} new={"workCard"} className="project" />
                 </a>
               </div>
