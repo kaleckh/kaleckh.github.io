@@ -219,11 +219,13 @@ function App() {
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
+                <li>React</li>                
               </div>
-              <div className="rightList">
-                <li>Git</li>
-                <li>React</li>
+              <div className="rightList">                                                
                 <li>Bootstrap</li>
+                <li>Git</li>
+                <li>Node</li>
+                <li>SQL</li>
               </div>
             </div>
           </div>
@@ -236,6 +238,7 @@ function App() {
               <div className="leftList">
                 <li>Node.Js</li>
                 <li>MySQL</li>
+                <li>REST</li>
                 <li>SQL</li>
               </div>
               <div className="rightList">
