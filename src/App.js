@@ -160,7 +160,7 @@ function App() {
           <div className={"picRow"}>
             <div className={`workRightContainer`}>
               <div className="center">
-                <a target="_blank" href="https://copiersutah.com/">
+                <a target="_blank" href="https://www.copiersutah.com/">
                   <img
                     src={firstProject}
                     new={"workCard"}
