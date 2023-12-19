@@ -119,7 +119,7 @@ function App() {
             Hi, I'm Kaleck Hamm, a full-stack web developer based in Orem, Utah.
             With a passion for creating intuitive and visually appealing
             websites and applications, I've honed my skills in technologies such
-            as JavaScript, React, Node.js, and PostgreSQL. I'm a quick learner,
+            as Typescript, React, Node.js, and Next.js. I'm a quick learner,
             an excellent problem solver, and I'm always looking for
             opportunities to grow and expand my skill set.
           </div>
@@ -179,7 +179,7 @@ function App() {
                   A platform that showcases, compares, and generates valuable leads for copiers, with a user-friendly experience that simplifies the copier purchasing process.
                 </div>
                 <div className="small">
-                  Next.js | Omnis | Javascript | CSS | HTML
+                  Next.js | Javascript | CSS | HTML
                 </div>
               </div>
             </div>
@@ -189,8 +189,8 @@ function App() {
               <div className={"stuff"}>
                 <div className="title">Solar DIY</div>
                 <div className="paragraph">
-                  Solar platform that custom builds solar systems for your home
-                </div>
+                   
+A web-based tool that assesses the cost of purchasing a solar system and forecasts 25-year savings resulting from its implementation</div>
                 <div className="small">React.js | Javascript | HTML | CSS</div>
               </div>
             </div>
