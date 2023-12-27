@@ -142,7 +142,7 @@ function App() {
 
       <div id="section-3" className="sectionFour four">
         <div
-          className={`workLeftContainer hideTransLeft ${cssClass}`}
+          className={`workLeftContainer ${cssClass}`}
           ref={ref}
         >
           <div className="acontainer">
@@ -171,8 +171,7 @@ function App() {
             </div>
             <div className="middle">
               <div
-                ref={refPhoto}
-                className={`stuff hideTrans ${cssPhoto}`}
+                className={`stuff ${cssPhoto}`}
               >
                 <div className="title">CopiersUtah.com</div>
                 <div className="paragraph">
@@ -184,21 +183,75 @@ function App() {
               </div>
             </div>
           </div>
-          <div className={"picRowSolar"}>
-            <div className={`middle hideTrans ${cssPhoto}`}>
-              <div className={"stuff"}>
-                <div className="title">Solar DIY</div>
-                <div className="paragraph">
-                   
-A web-based tool that assesses the cost of purchasing a solar system and forecasts 25-year savings resulting from its implementation</div>
-                <div className="small">React.js | Javascript | HTML | CSS</div>
+          <div className={"picRow"}>
+            <div className={`workRightContainer`}>
+              <div className="center">
+                <a target="_blank" href="https://www.copiersutah.com/">
+                  <img
+                    src={firstProject}
+                    new={"workCard"}
+                    className="project"
+                  />
+                </a>
               </div>
             </div>
+            <div className="middle">
+              <div
+                ref={refPhoto}
+                className={`stuff ${cssPhoto}`}
+              >
+                <div className="title">Jukify</div>
+                <div className="paragraph">
+                  A platform that showcases, compares, and generates valuable leads for copiers, with a user-friendly experience that simplifies the copier purchasing process.
+                </div>
+                <div className="small">
+                  Next.js | Javascript | CSS | HTML
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={"picRow"}>
+            <div className={`workRightContainer`}>
+              <div className="center">
+                <a target="_blank" href="https://www.alienitservices.com/">
+                  <img
+                    src={firstProject}
+                    new={"workCard"}
+                    className="project"
+                  />
+                </a>
+              </div>
+            </div>
+            <div className="middle">
+              <div
+                ref={refPhoto}
+                className={`stuff ${cssPhoto}`}
+              >
+                <div className="title">AlienItServices.com</div>
+                <div className="paragraph">
+                  A platform that showcases, compares, and generates valuable leads for copiers, with a user-friendly experience that simplifies the copier purchasing process.
+                </div>
+                <div className="small">
+                  Next.js | Javascript | CSS | HTML
+                </div>
+              </div>
+            </div>
+          </div>
+          <div  className={"picRow"}>            
             <div className={`workRightContainer`}>
               <div className="center">
                 <a target="_blank" href="https://641c85e1bf71d90dd9df96d8--flourishing-gelato-78f8df.netlify.app/">
                   <img src={second} new={"workCard"} className="project" />
                 </a>
+              </div>
+            </div>
+            <div className={`middle ${cssPhoto}`}>
+              <div className={"stuff"}>
+                <div className="title">Solar DIY</div>
+                <div className="paragraph">
+
+                  A web-based tool that assesses the cost of purchasing a solar system and forecasts 25-year savings resulting from its implementation</div>
+                <div className="small">React.js | Javascript | HTML | CSS</div>
               </div>
             </div>
           </div>
@@ -219,9 +272,9 @@ A web-based tool that assesses the cost of purchasing a solar system and forecas
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
-                <li>React</li>                
+                <li>React</li>
               </div>
-              <div className="rightList">                                                
+              <div className="rightList">
                 <li>Bootstrap</li>
                 <li>Git</li>
                 <li>Node</li>
