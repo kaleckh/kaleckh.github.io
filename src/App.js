@@ -4,6 +4,8 @@ import { Linkedin } from "./media/Linkedin";
 import { Insta } from "./photos/Insta";
 import Image from "./Image.js";
 import second from "./photos/second.png";
+import alien from "./photos/alien.png";
+import juke from "./photos/jukify.png";
 import photo1 from "./photos//photo1.webp";
 import photo2 from "./photos/photo2.webp";
 import photo3 from "./photos/photo3.webp";
@@ -177,24 +179,14 @@ function App() {
                 <div className="paragraph">
                   A platform that showcases, compares, and generates valuable leads for copiers, with a user-friendly experience that simplifies the copier purchasing process.
                 </div>
-                <div className="small">
+                <div style={{ padding: "8px" }} className="small">
                   Next.js | Javascript | CSS | HTML
                 </div>
               </div>
             </div>
           </div>
           <div className={"picRow"}>
-            <div className={`workRightContainer`}>
-              <div className="center">
-                <a target="_blank" href="https://www.copiersutah.com/">
-                  <img
-                    src={firstProject}
-                    new={"workCard"}
-                    className="project"
-                  />
-                </a>
-              </div>
-            </div>
+
             <div className="middle">
               <div
                 ref={refPhoto}
@@ -202,11 +194,22 @@ function App() {
               >
                 <div className="title">Jukify</div>
                 <div className="paragraph">
-                  A platform that showcases, compares, and generates valuable leads for copiers, with a user-friendly experience that simplifies the copier purchasing process.
+                  Developed a Spotify Jukebox web application facilitating collaborative music curation. Users join rooms, contributing and voting on songs to create a communal playlist. Implemented features for seamless integration with Spotify's API, enabling real-time song addition and voting functionality.
                 </div>
-                <div className="small">
-                  Next.js | Javascript | CSS | HTML
+                <div style={{ padding: "8px" }} className="small">
+                  Next.js | Javascript | CSS | HTML | Sockets.io | Spotify API
                 </div>
+              </div>
+            </div>
+            <div className={`workRightContainer`}>
+              <div className="center">
+                <a target="_blank" href="https://github.com/nclark561/jukebox">
+                  <img
+                    src={juke}
+                    new={"workCard"}
+                    className="project"
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -215,7 +218,7 @@ function App() {
               <div className="center">
                 <a target="_blank" href="https://www.alienitservices.com/">
                   <img
-                    src={firstProject}
+                    src={alien}
                     new={"workCard"}
                     className="project"
                   />
@@ -229,29 +232,31 @@ function App() {
               >
                 <div className="title">AlienItServices.com</div>
                 <div className="paragraph">
-                  A platform that showcases, compares, and generates valuable leads for copiers, with a user-friendly experience that simplifies the copier purchasing process.
+                  Developed an IT services website highlighting our solutions and capturing leads through a user-friendly quote form.
                 </div>
-                <div className="small">
+                <div style={{ padding: "8px" }} className="small">
                   Next.js | Javascript | CSS | HTML
                 </div>
               </div>
             </div>
           </div>
-          <div  className={"picRow"}>            
-            <div className={`workRightContainer`}>
-              <div className="center">
-                <a target="_blank" href="https://641c85e1bf71d90dd9df96d8--flourishing-gelato-78f8df.netlify.app/">
-                  <img src={second} new={"workCard"} className="project" />
-                </a>
-              </div>
-            </div>
+          <div className={"picRow"}>
+
             <div className={`middle ${cssPhoto}`}>
               <div className={"stuff"}>
                 <div className="title">Solar DIY</div>
                 <div className="paragraph">
 
                   A web-based tool that assesses the cost of purchasing a solar system and forecasts 25-year savings resulting from its implementation</div>
-                <div className="small">React.js | Javascript | HTML | CSS</div>
+                <div style={{ padding: "8px" }} className="small">
+                  React.js | Javascript | HTML | CSS</div>
+              </div>
+            </div>
+            <div className={`workRightContainer`}>
+              <div className="center">
+                <a target="_blank" href="https://641c85e1bf71d90dd9df96d8--flourishing-gelato-78f8df.netlify.app/">
+                  <img src={second} new={"workCard"} className="project" />
+                </a>
               </div>
             </div>
           </div>
@@ -298,6 +303,7 @@ function App() {
                 <li>Docker</li>
                 <li>Postgres</li>
                 <li>Prisma</li>
+                <li>Firebase</li>
 
               </div>
             </div>
