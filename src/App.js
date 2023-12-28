@@ -264,7 +264,7 @@ function App() {
       </div>
       <div className="sectionFive">
         <div id="skills" className="skills">
-          Skills
+          Skills & Tools
         </div>
         <div className="skillsNameContainer">
           <div
@@ -298,6 +298,7 @@ function App() {
                 <li>MySQL</li>
                 <li>REST</li>
                 <li>SQL</li>
+                <li>Postman</li>
               </div>
               <div className="rightList">
                 <li>Docker</li>
