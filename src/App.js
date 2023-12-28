@@ -278,6 +278,7 @@ function App() {
                 <li>CSS</li>
                 <li>JavaScript</li>
                 <li>React</li>
+                <li>Next.js</li>
               </div>
               <div className="rightList">
                 <li>Bootstrap</li>
