@@ -203,7 +203,7 @@ function App() {
             </div>
             <div className={`workRightContainer`}>
               <div className="center">
-                <a target="_blank" href="https://github.com/nclark561/jukebox">
+                <a target="_blank" href="https://www.youtube.com/watch?v=nK6ggr6-on0">
                   <img
                     src={juke}
                     new={"workCard"}
