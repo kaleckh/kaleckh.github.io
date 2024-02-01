@@ -12,6 +12,7 @@ import photo3 from "./photos/photo3.webp";
 import photo4 from "./photos/photo4.webp";
 import photo5 from "./photos/photo5.webp";
 import photo6 from "./photos/photo6.webp";
+import usaToner from "./photos/usa-toner.png";
 import { useInView } from "react-intersection-observer";
 import firstProject from "./photos/copiers.webp";
 import React, { useRef } from "react";
@@ -118,12 +119,7 @@ function App() {
 
           <div className="headerWord">I'm a full stack Software Engineer</div>
           <div className="intro">
-            Hi, I'm Kaleck Hamm, a full-stack web developer based in Orem, Utah.
-            With a passion for creating intuitive and visually appealing
-            websites and applications, I've honed my skills in technologies such
-            as Typescript, React, Node.js, and Next.js. I'm a quick learner,
-            an excellent problem solver, and I'm always looking for
-            opportunities to grow and expand my skill set.
+            Welcome! I'm Kaleck Hamm, a dedicated Full Stack Developer renowned for crafting resilient web applications. With a focus on both front-end and back-end development, I specialize in leveraging top-tier technologies like React.js, Angular, and Node.js to deliver seamless digital experiences. Beyond coding excellence, I'm also well-versed in SEO strategies, ensuring your projects not only shine in functionality but also rank high in search engine results.
           </div>
         </div>
       </div>
@@ -160,6 +156,33 @@ function App() {
         </div>
         <div className={"column"}>
           <div className={"picRow"}>
+            <div className="middle">
+              <div
+                className={`stuff ${cssPhoto}`}
+              >
+                <div className="title">USA-Toner.com</div>
+                <div className="paragraph">
+                  Ecommerce platform for American made toner, simplifying the current process significantly   
+                </div>
+                <div style={{ padding: "8px" }} className="small">
+                  Next.js | Javascript | CSS | HTML | Axios 
+                </div>
+              </div>
+            <div className={`workRightContainer`}>
+              <div className="center">
+                <a target="_blank" href="https://www.usa-toner.com/">
+                  <img
+                    src={usaToner}
+                    new={"workCard"}
+                    className="project"
+                  />
+                </a>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div className={"picRow"}>  
+            <div className="middle">
             <div className={`workRightContainer`}>
               <div className="center">
                 <a target="_blank" href="https://www.copiersutah.com/">
@@ -171,7 +194,6 @@ function App() {
                 </a>
               </div>
             </div>
-            <div className="middle">
               <div
                 className={`stuff ${cssPhoto}`}
               >
@@ -186,7 +208,6 @@ function App() {
             </div>
           </div>
           <div className={"picRow"}>
-
             <div className="middle">
               <div
                 ref={refPhoto}
