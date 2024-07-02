@@ -155,45 +155,20 @@ function App() {
           </div>
         </div>
         <div className={"column"}>
+
           <div className={"picRow"}>
             <div className="middle">
-              <div
-                className={`stuff ${cssPhoto}`}
-              >
-                <div className="title">USA-Toner.com</div>
-                <div className="paragraph">
-                  Ecommerce platform for American made toner, simplifying the current process significantly   
+              <div className={`workRightContainer`}>
+                <div className="center">
+                  <a target="_blank" href="https://www.copiersutah.com/">
+                    <img
+                      src={firstProject}
+                      new={"workCard"}
+                      className="project"
+                    />
+                  </a>
                 </div>
-                <div style={{ padding: "8px" }} className="small">
-                  Next.js | Javascript | CSS | HTML | Axios 
-                </div>
               </div>
-            <div className={`workRightContainer`}>
-              <div className="center">
-                <a target="_blank" href="https://www.usa-toner.com/">
-                  <img
-                    src={usaToner}
-                    new={"workCard"}
-                    className="project"
-                  />
-                </a>
-              </div>
-            </div>
-            </div>
-          </div>
-          <div className={"picRow"}>  
-            <div className="middle">
-            <div className={`workRightContainer`}>
-              <div className="center">
-                <a target="_blank" href="https://www.copiersutah.com/">
-                  <img
-                    src={firstProject}
-                    new={"workCard"}
-                    className="project"
-                  />
-                </a>
-              </div>
-            </div>
               <div
                 className={`stuff ${cssPhoto}`}
               >
@@ -209,6 +184,17 @@ function App() {
           </div>
           <div className={"picRow"}>
             <div className="middle">
+              <div className={`workRightContainer`}>
+                <div className="center">
+                  <a target="_blank" href="https://www.youtube.com/watch?v=nK6ggr6-on0">
+                    <img
+                      src={juke}
+                      new={"workCard"}
+                      className="project"
+                    />
+                  </a>
+                </div>
+              </div>
               <div
                 ref={refPhoto}
                 className={`stuff ${cssPhoto}`}
@@ -222,62 +208,32 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className={`workRightContainer`}>
-              <div className="center">
-                <a target="_blank" href="https://www.youtube.com/watch?v=nK6ggr6-on0">
-                  <img
-                    src={juke}
-                    new={"workCard"}
-                    className="project"
-                  />
-                </a>
-              </div>
-            </div>
+
           </div>
           <div className={"picRow"}>
-            <div className={`workRightContainer`}>
-              <div className="center">
-                <a target="_blank" href="https://www.alienitservices.com/">
-                  <img
-                    src={alien}
-                    new={"workCard"}
-                    className="project"
-                  />
-                </a>
-              </div>
-            </div>
             <div className="middle">
+
+              <div className={`workRightContainer`}>
+                <div className="center">
+                  <a target="_blank" href="https://www.usa-toner.com/">
+                    <img
+                      src={usaToner}
+                      new={"workCard"}
+                      className="project"
+                    />
+                  </a>
+                </div>
+              </div>
               <div
-                ref={refPhoto}
                 className={`stuff ${cssPhoto}`}
               >
-                <div className="title">AlienItServices.com</div>
+                <div className="title">USA-Toner.com</div>
                 <div className="paragraph">
-                  Developed an IT services website highlighting our solutions and capturing leads through a user-friendly quote form.
+                  Ecommerce platform for American made toner, simplifying the current process significantly
                 </div>
                 <div style={{ padding: "8px" }} className="small">
-                  Next.js | Javascript | CSS | HTML
+                  Next.js | Javascript | CSS | HTML | Axios
                 </div>
-              </div>
-            </div>
-          </div>
-          <div className={"picRow"}>
-
-            <div className={`middle ${cssPhoto}`}>
-              <div className={"stuff"}>
-                <div className="title">Solar DIY</div>
-                <div className="paragraph">
-
-                  A web-based tool that assesses the cost of purchasing a solar system and forecasts 25-year savings resulting from its implementation</div>
-                <div style={{ padding: "8px" }} className="small">
-                  React.js | Javascript | HTML | CSS</div>
-              </div>
-            </div>
-            <div className={`workRightContainer`}>
-              <div className="center">
-                <a target="_blank" href="https://641c85e1bf71d90dd9df96d8--flourishing-gelato-78f8df.netlify.app/">
-                  <img src={second} new={"workCard"} className="project" />
-                </a>
               </div>
             </div>
           </div>

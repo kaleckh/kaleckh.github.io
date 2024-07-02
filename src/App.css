@@ -796,7 +796,10 @@ li {
     }
 }
 
-@media (width < 600px) {
+@media (max-width: 600px) {
+    .title{
+        padding: 8px;
+    }
     .card {
         opacity: 0;
         margin: 10px;
@@ -809,6 +812,10 @@ li {
         opacity: 0;
     }
     .picRow {
+        flex-direction: column;
+        width: 100%;
+    }
+    .middle {
         flex-direction: column;
         width: 100%;
     }
@@ -885,8 +892,9 @@ li {
         width: 100vw;
     }
     .paragraph {
-        width: 70%;
-        font-size: 20px;
+        width: 90%;
+        padding: 5px;
+        font-size: 18px;
     }
     .workRightContainer {
         width: 100%;
@@ -917,7 +925,7 @@ li {
     }
   
     .small {
-        font-size: 15px;
+        font-size: 13px;
     }
 }
 
@@ -945,6 +953,8 @@ li {
         font-size: 17px;
     }
     .intro {
+        width: 90%;
+        padding: 15px;
         font-size: 17px;
         font-weight: 200;
     }
