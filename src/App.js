@@ -119,7 +119,7 @@ function App() {
 
           <div className="headerWord">I'm a full stack Software Engineer</div>
           <div className="intro">
-            Welcome! I'm Kaleck Hamm, a dedicated Full Stack Developer renowned for crafting resilient web applications. With a focus on both front-end and back-end development, I specialize in leveraging top-tier technologies like React.js, Angular, and Node.js to deliver seamless digital experiences. I craft seamless digital experiences that excel in both functionality and search engine rankings.
+          Welcome! I'm Kaleck Hamm, a passionate Full Stack Developer who loves creating robust web applications. I work on both front-end and back-end development, using top technologies like React.js, Angular, Node.js and Ionic to build smooth and engaging digital experiences that not only function perfectly but also rank well on search engines.
           </div>
         </div>
       </div>
