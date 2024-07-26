@@ -12,7 +12,7 @@ import photo3 from "./photos/photo3.webp";
 import photo4 from "./photos/photo4.webp";
 import photo5 from "./photos/photo5.webp";
 import photo6 from "./photos/photo6.webp";
-import usaToner from "./photos/usa-toner.png";
+import usaToner from "./photos/messaging.png";
 import { useInView } from "react-intersection-observer";
 import firstProject from "./photos/copiers.webp";
 import React, { useRef } from "react";
@@ -155,6 +155,33 @@ function App() {
           </div>
         </div>
         <div className={"column"}>
+          <div className={"picRow"}>
+            <div className="middle">
+
+              <div className={`workRightContainer`}>
+                <div className="center">
+                  <a target="_blank" href="https://www.linkedin.com/feed/update/urn:li:activity:7221575398046777344/">
+                    <img
+                      src={usaToner}
+                      new={"workCard"}
+                      className="project"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div
+                className={`stuff ${cssPhoto}`}
+              >
+                <div className="title">React Ionic Messaging</div>
+                <div className="paragraph">
+                  Real-time messaging feature for an iOS or Android application using React Ionic, TypeScript and WebSockets
+                </div>
+                <div style={{ padding: "8px" }} className="small">
+                  React Ionic | TypeScript | CSS | HTML | WebSockets
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div className={"picRow"}>
             <div className="middle">
@@ -209,33 +236,6 @@ function App() {
               </div>
             </div>
 
-          </div>
-          <div className={"picRow"}>
-            <div className="middle">
-
-              <div className={`workRightContainer`}>
-                <div className="center">
-                  <a target="_blank" href="https://www.usa-toner.com/">
-                    <img
-                      src={usaToner}
-                      new={"workCard"}
-                      className="project"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div
-                className={`stuff ${cssPhoto}`}
-              >
-                <div className="title">USA-Toner.com</div>
-                <div className="paragraph">
-                  Ecommerce platform for American made toner, simplifying the current process significantly
-                </div>
-                <div style={{ padding: "8px" }} className="small">
-                  Next.js | Javascript | CSS | HTML | Axios
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
