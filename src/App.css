@@ -1,976 +1,981 @@
 *:focus {
-    outline: none !important;
+  outline: none !important;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .header {
-    display: flex;
-    background-color: black;
-    display: fixed;
+  display: flex;
+  background-color: black;
+  display: fixed;
 }
 
 .subHeaderWord {
-    font-weight: 150;
-    font-size: 25px;
+  font-weight: 150;
+  font-size: 25px;
 }
 
 .headerWords {
-    margin: 25px;
-    font-weight: 200;
+  margin: 25px;
+  font-weight: 200;
 }
 
 .containerThree {
-    display: flex;
-    padding-left: 25px;
+  display: flex;
+  padding-left: 25px;
 }
 
 .line {
-    background-color: white;
-    margin-top: 15px;
-    height: 80px;
-    width: 2px;
+  background-color: white;
+  margin-top: 15px;
+  height: 80px;
+  width: 2px;
 }
 
 .socials {
-    padding: 15px;
-    writing-mode: vertical-lr;
+  padding: 15px;
+  writing-mode: vertical-lr;
 }
 
 .skillsContainer {
-    display: flex;
+  display: flex;
 }
 
 .skillsWords {
-    padding: 3px;
+  padding: 3px;
 }
 
 .headerWord {
-    font-weight: 300;
-    font-size: 35px;
+  font-weight: 300;
+  font-size: 35px;
 }
 
 .headerContainer {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 .divWordContainer {
-    display: flex;
-    width: 35vw;
-    margin: 25px;
-    justify-content: space-around;
+  display: flex;
+  width: 35vw;
+  margin: 25px;
+  justify-content: space-around;
 }
 
 .mainScreenRight {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
 }
 
 .mainScreenLeft {
-    display: flex;
-    height: 600px;
-    padding-left: 60px;
-    position: fixed;
-    align-items: flex-end;
+  display: flex;
+  height: 600px;
+  padding-left: 60px;
+  position: fixed;
+  align-items: flex-end;
 }
 
 .picRow {
-    display: flex;
-    width: 90%;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
 .middle {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  width: 90%;
+
+  justify-content: space-evenly;
 }
 
 .picRowSolar {
-    display: flex;
+  display: flex;
 }
 
 .stuff {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 50%;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 50%;
+  width: 100%;
 }
 
 .column {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: fit-content;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  flex-direction: column;
 }
 
 .paragraph {
-    font-weight: 200;
-    font-size: 25px;
-    border: .5px white solid;
-    padding: 15px;
-    width: 70%;
-    text-align: center;
+  font-weight: 200;
+  font-size: 25px;
+  border: 0.5px white solid;
+  padding: 15px;
+  width: 1000px;
+  text-align: center;
 }
 
 .section {
-    display: flex;
-    height: fit-content;
-    width: 100vw;
-    padding-bottom: 50px;
+  display: flex;
+  height: fit-content;
+  width: 100vw;
+  padding-bottom: 50px;
 }
 
 .sectionFour {
-    display: flex;
-    flex-direction: column;
-    height: fit-content;
-    
-    width: 100vw;
-    padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+
+  width: 100vw;
+  padding-top: 25px;
 }
 
 button {
-    display: flex;
-    position: relative;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    padding: 1.25em 3em;
-    margin: 10px;
-    color: white;
-    background-color: black;
-    border: 1px solid white;
+  display: flex;
+  position: relative;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 1.25em 3em;
+  margin: 10px;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
 }
 
 button:hover {
-    background-color: white;
-    color: black;
-    border: 1px solid white;
+  background-color: white;
+  color: black;
+  border: 1px solid white;
 }
 
 .one {
-    background-color: black;
-    display: flex;
+  background-color: black;
+  display: flex;
 }
 
 .sectionOneFont {
-    font-size: 110px;
-    font-weight: 250;
-    margin-top: 150px;
+  font-size: 110px;
+  font-weight: 250;
+  margin-top: 150px;
 }
 
 .two {
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .photoTitle {
-    font-size: 75px;
-    font-weight: 200;
+  font-size: 75px;
+  font-weight: 200;
 }
 
 .card {
-    margin: 10px;
-    transition: all 1s;
-    width: 400px;
-    height: 400px;
-    border-radius: 10px;
-    object-fit: cover;
-    opacity: 0;
-    filter: blur(5px);
+  margin: 10px;
+  transition: all 1s;
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+  opacity: 0;
+  filter: blur(5px);
 }
 
 .card.show {
-    filter: blur(0px);
-    opacity: 1;
+  filter: blur(0px);
+  opacity: 1;
 }
 
 .small {
-    font-size: 16px;
-    font-weight: 200;
+  font-size: 16px;
+  font-weight: 200;
 }
 
 .intro {
-    text-align: center;
-    line-height: 1.5;
-    padding: 25px;
-    font-size: 25px;
-    font-weight: 200;
-    width: 75%;
+  text-align: center;
+  line-height: 1.5;
+  padding: 25px;
+  font-size: 30px;
+  font-weight: 200;
+  width: 75%;
 }
 
 .acontainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    height: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 15vh;
 }
 
 .project {
-    margin: 10px;
-    transition: all 1s;
-    width: 600px;
-    height: 350px;
-    border-radius: 15px;
-    object-fit: contain;
-    cursor: pointer;
+  margin: 10px;
+  transition: all 1s;
+  width: 600px;
+  height: 350px;
+  border-radius: 15px;
+  object-fit: contain;
+  cursor: pointer;
 }
 
 .twitter {
-    height: 50px;
-    width: 50px;
-    margin: 5px;
+  height: 50px;
+  width: 50px;
+  margin: 5px;
 }
 
 .socialsContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .twoTitle {
-    font-size: large;
-    margin: 25px;
+  font-size: large;
+  margin: 25px;
 }
 
 .sectionTwoPhotoContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    justify-content: center;
-    width: 90vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  width: 90vw;
 }
 
 .centered {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .square {
-    height: 200px;
-    width: 200px;
-    background-color: black;
+  height: 200px;
+  width: 200px;
+  background-color: black;
 }
 
 .sectionThree {
-    display: flex;
-    height: fit-content;
-    
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: black;
+  display: flex;
+  height: fit-content;
+
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
 }
 
 .sticky {
-    top: 500px;
-    display: flex;
+  top: 500px;
+  display: flex;
 }
 
 .contactContainer {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: 90vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 90vh;
 }
 
 .margin {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .contactInputs {
-    display: flex;
-    width: 65vw;
-    justify-content: space-around;
-    height: 200px;
+  display: flex;
+  width: 65vw;
+  justify-content: space-around;
+  height: 200px;
 }
 
 input {
-    border: none;
+  border: none;
 }
 
 .contactInput {
-    border: 0;
-    padding: 0.6em;
-    padding-left: 0;
-    width: 250px;
-    position: relative;
-    color: currentColor;
-    background: transparent;
-    border-bottom: 1px solid currentColor;
-    margin: 8px;
+  border: 0;
+  padding: 0.6em;
+  padding-left: 0;
+  width: 250px;
+  position: relative;
+  color: currentColor;
+  background: transparent;
+  border-bottom: 1px solid currentColor;
+  margin: 8px;
 }
 
 a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .contactP {
-    font-weight: 200;
-    font-size: 20px;
+  font-weight: 200;
+  font-size: 20px;
 }
 
 .inputContainer {
-    margin: 15px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin: 15px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .bigInput {
-    border: 0;
-    padding: 0.6em;
-    padding-left: 0;
-    position: relative;
-    width: 100%;
-    color: currentColor;
-    background: transparent;
-    border-bottom: 1px solid currentColor;
-    margin: 8px;
+  border: 0;
+  padding: 0.6em;
+  padding-left: 0;
+  position: relative;
+  width: 100%;
+  color: currentColor;
+  background: transparent;
+  border-bottom: 1px solid currentColor;
+  margin: 8px;
 }
 
 .leftSide {
-    width: 100%;
-    display: flex;
-    justify-content: left;
+  width: 100%;
+  display: flex;
+  justify-content: left;
 }
 
 .messageContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50vw;
 }
 
 .largerText {
-    font-weight: 300;
-    font-size: 35px;
+  font-weight: 300;
+  font-size: 35px;
 }
 
 .smallText {
-    font-weight: 200;
+  font-weight: 200;
 }
 
 .githubLink {
-    color: white;
-    text-decoration: underline;
-    margin: 8px;
+  color: white;
+  text-decoration: underline;
+  margin: 8px;
 }
 
 .four {
-    background-color: black;
-    display: flex;
+  background-color: black;
+  display: flex;
 }
 
 .workLeftContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
 }
 
 .workRightContainer {
-    display: flex;
-    align-items: center;
-    margin: 20px;
-    height: 100%;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
 }
 
 .center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 53%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 53%;
 }
 
 .projects {
-    height: 250px;
-    border-radius: 10px;
-    width: 250px;
-    object-fit: cover;
-    margin: 10px;
+  height: 250px;
+  border-radius: 10px;
+  width: 250px;
+  object-fit: cover;
+  margin: 10px;
 }
 
 .project {
-    object-fit: contain;
+  object-fit: contain;
 }
 
 .bottomProject {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .wholeScreen {
-    height: 100%;
-    width: 100%;
-    scroll-behavior: smooth;
-    color: white;
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+  color: white;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .item {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .main {
-    background-color: #dadbf1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-color: #dadbf1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .gridcontainer {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 10px 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px 10px;
 }
 
 .griditem {
-    height: 50px;
-    text-align: center;
+  height: 50px;
+  text-align: center;
 }
 
 .sectionFive {
-    height: 60vh;
-    background-color: black;
-    color: white;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  height: 60vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .frontContainer {
-    border: solid white 1px;
-    width: 40%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 10px;
-    border-radius: 10px;
+  border: solid white 1px;
+  width: 40%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 li {
-    font-weight: 200;
-    font-size: 20px;
+  font-weight: 200;
+  font-size: 20px;
 }
 
 .leftList {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
 }
 
 .rightList {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
 }
 
 .skills {
-    height: 20%;
-    font-size: 40px;
-    font-weight: 400;
+  height: 20%;
+  font-size: 40px;
+  font-weight: 400;
 }
 
 .none {
-    opacity: 0;
+  opacity: 0;
 }
 
 .backContainer {
+  border: solid white 1px;
+  width: 40%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.listContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  height: 60%;
+}
+
+.skillsNameContainer {
+  justify-content: space-around;
+  display: flex;
+  width: 60%;
+  height: 100%;
+}
+
+.frontend {
+  height: 25%;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.show {
+  opacity: 1;
+}
+
+.footerSections {
+  display: flex;
+  font-weight: 200;
+  justify-content: space-around;
+  width: 20%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  height: 20vh;
+  border-top: 1px solid white;
+}
+
+.name {
+  font-weight: 400;
+  margin: 20px;
+  font-size: 25px;
+}
+
+.footerSection {
+  font-size: 20px;
+}
+
+.hideTransLeft {
+  opacity: 0;
+  transform: translateX(-10%);
+  transition: all 0.5s;
+}
+
+.hideTrans {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.hideTransRight {
+  opacity: 0;
+  transform: translateX(10%);
+  transition: all 0.5s;
+}
+
+.hideTransBottom {
+  opacity: 0;
+  transform: translateY(-30%);
+  transition: all 1s;
+}
+
+.hideTransTop {
+  opacity: 0;
+  transform: translateY(30%);
+  transition: all 1s;
+}
+
+.showTrans {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (width < 1300px) {
+  .photoLeft {
+    display: flex;
+    justify-content: center;
+  }
+
+  .smallCard {
+    width: 300px;
+  }
+}
+
+@media (width < 1250px) {
+  .sectionTwoPhotoContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+  }
+  .card {
+    opacity: 0;
+    margin: 10px;
+    filter: blur(5px);
+    transition: all 1s;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    opacity: 0;
+  }
+}
+
+@media (width < 1041px) {
+  .socialsContainer {
+    display: none;
+  }
+  .subHeaderWord {
+    font-weight: 150;
+    font-size: 20px;
+  }
+  .headerWords {
+    margin: 35px;
+    font-size: 30px;
+    font-weight: 200;
+    display: none;
+  }
+  .headerWord {
+    font-weight: 200;
+    font-size: 25px;
+    text-align: center;
+  }
+  .headerContainer {
+    width: 100vw;
+  }
+  .header {
+    width: 100%;
+  }
+  .divWordContainer {
+    width: 100vw;
+    justify-content: space-around;
+    margin: 5px;
+    height: 100%;
+    align-items: center;
+  }
+  .sectionOneFont {
+    font-size: 50px;
+  }
+  .mainScreenRight {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+  }
+  .section {
+    height: 80vh;
+  }
+  .photoTitle {
+    font-size: 30px;
+  }
+  .photoTitle {
+    text-align: center;
+  }
+  .workLeftContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .text {
+    text-align: center;
+  }
+  .sectionFour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: 100vw;
+    padding-top: 200px;
+  }
+  .workRightContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .smallText {
+    font-size: 20px;
+  }
+  .contactInputs {
+    display: flex;
+    width: 75vw;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+  }
+  .messageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75vw;
+  }
+  .largerText {
+    font-weight: 200;
+    font-size: 35px;
+  }
+  li {
+    font-size: 15px;
+  }
+}
+
+@media (width < 900px) {
+  .footerSections {
+    width: 60%;
+  }
+  .sectionTwoPhotoContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+  }
+  .card {
+    opacity: 0;
+    margin: 10px;
+    filter: blur(5px);
+    transition: all 1s;
+    width: 280px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    opacity: 0;
+  }
+  .redSection {
+    height: fit-content;
+    padding: 10px;
+  }
+  .workCard {
+    opacity: 0;
+    margin: 10px;
+    filter: blur(5px);
+    transition: all 1s;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    opacity: 0;
+  }
+  .skillsNameContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+  }
+  li {
+    font-size: 25px;
+  }
+  .frontContainer {
     border: solid white 1px;
-    width: 40%;
+    width: 80%;
     height: 40%;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 10px;
-}
-
-.listContainer {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    height: 60%;
-}
-
-.skillsNameContainer {
-    justify-content: space-around;
-    display: flex;
-    width: 60%;
-    height: 100%;
-}
-
-.frontend {
-    height: 25%;
-    font-weight: 300;
-    font-size: 30px;
-}
-
-.show {
-    opacity: 1;
-}
-
-.footerSections {
-    display: flex;
-    font-weight: 200;
-    justify-content: space-around;
-    width: 20%;
-}
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    border-radius: 10px;
+  }
+  .sectionFive {
+    height: 70vh;
     background-color: black;
-    height: 20vh;
-    border-top: 1px solid white;
-}
-
-.name {
-    font-weight: 400;
-    margin: 20px;
-    font-size: 25px;
-}
-
-.footerSection {
-    font-size: 20px;
-}
-
-.hideTransLeft {
-    opacity: 0;
-    transform: translateX(-10%);
-    transition: all 0.5s;
-}
-
-.hideTrans {
-    opacity: 0;
-    transition: all 0.5s;
-}
-
-.hideTransRight {
-    opacity: 0;
-    transform: translateX(10%);
-    transition: all 0.5s;
-}
-
-.hideTransBottom {
-    opacity: 0;
-    transform: translateY(-30%);
-    transition: all 1s;
-}
-
-.hideTransTop {
-    opacity: 0;
-    transform: translateY(30%);
-    transition: all 1s;
-}
-
-.showTrans {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-@media (width < 1300px) {
-    .photoLeft {
-        display: flex;
-        justify-content: center;
-    }
-   
-    .smallCard {
-        width: 300px;
-    }
-}
-
-@media (width < 1250px) {
-    .sectionTwoPhotoContainer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        width: 100%;
-    }
-    .card {
-        opacity: 0;
-        margin: 10px;
-        filter: blur(5px);
-        transition: all 1s;
-        width: 400px;
-        height: 300px;
-        border-radius: 10px;
-        object-fit: cover;
-        opacity: 0;
-    }
-}
-
-@media (width < 1041px) {
-    .socialsContainer {
-        display: none;
-    }
-    .subHeaderWord {
-        font-weight: 150;
-        font-size: 20px;
-    }
-    .headerWords {
-        margin: 35px;
-        font-size: 30px;
-        font-weight: 200;
-        display: none;
-    }
-    .headerWord {
-        font-weight: 200;
-        font-size: 25px;
-        text-align: center;
-    }
-    .headerContainer {
-        width: 100vw;
-    }
-    .header {
-        width: 100%;
-    }
-    .divWordContainer {
-        width: 100vw;
-        justify-content: space-around;
-        margin: 5px;
-        height: 100%;
-        align-items: center;
-    }
-    .sectionOneFont {
-        font-size: 50px;
-    }
-    .mainScreenRight {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
-        height: 200px;
-    }
-    .section {
-        height: 80vh;
-    }
-    .photoTitle {
-        font-size: 30px;
-    }
-    .photoTitle {
-        text-align: center;
-    }
-    .workLeftContainer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        width: 100%;
-    }
-    .text {
-        text-align: center;
-    }
-    .sectionFour {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: fit-content;
-        width: 100vw;
-        padding-top: 200px;
-    }
-    .workRightContainer {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .smallText {
-        font-size: 20px;
-    }
-    .contactInputs {
-        display: flex;
-        width: 75vw;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 200px;
-    }
-    .messageContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 75vw;
-    }
-    .largerText {
-        font-weight: 200;
-        font-size: 35px;
-    }
-    li {
-        font-size: 15px;
-    }
-}
-
-@media (width < 900px) {
-    .footerSections {
-        width: 60%;
-    }
-    .sectionTwoPhotoContainer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        width: 100%;
-    }
-    .card {
-        opacity: 0;
-        margin: 10px;
-        filter: blur(5px);
-        transition: all 1s;
-        width: 280px;
-        height: 200px;
-        border-radius: 10px;
-        object-fit: cover;
-        opacity: 0;
-    }
-    .redSection {
-        height: fit-content;
-        padding: 10px;
-    }
-    .workCard {
-        opacity: 0;
-        margin: 10px;
-        filter: blur(5px);
-        transition: all 1s;
-        width: 400px;
-        height: 300px;
-        border-radius: 10px;
-        object-fit: cover;
-        opacity: 0;
-    }
-    .skillsNameContainer {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        width: 70%;
-        height: 100%;
-    }
-    li {
-        font-size: 25px;
-    }
-    .frontContainer {
-        border: solid white 1px;
-        width: 80%;
-        height: 40%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        padding: 10px;
-        border-radius: 10px;
-    }
-    .sectionFive {
-        height: 70vh;
-        background-color: black;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 600px) {
-    .title{
-        padding: 8px;
-    }
-    .card {
-        opacity: 0;
-        margin: 10px;
-        filter: blur(5px);
-        transition: all 1s;
-        width: 345px;
-        height: 345px;
-        border-radius: 10px;
-        object-fit: cover;
-        opacity: 0;
-    }
-    .picRow {
-        flex-direction: column;
-        width: 100%;
-    }
-    .middle {
-        flex-direction: column;
-        width: 100%;
-    }
-    .socialsContainer {
-        display: none;
-    }
-    .headerWords {
-        margin: 25px;
-        font-size: 20px;
-        font-weight: 200;
-        display: none;
-    }
-    .headerWord {
-        font-weight: 200;
-        font-size: 37px;
-        text-align: center;
-    }
-    .headerContainer {
-        width: 100vw;
-    }
-    .header {
-        width: 100%;
-    }
-    .hide {
-        display: none;
-    }
-    .divWordContainer {
-        width: 100vw;
-        justify-content: space-around;
-        margin: 5px;
-        height: 100%;
-        align-items: center;
-    }
-    .sectionOneFont {
-        font-size: 50px;
-    }
-    .mainScreenRight {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
-        height: 200px;
-    }
-    .section {
-        height: 80vh;
-    }
-    .photoTitle {
-        font-size: 30px;
-    }
-    .sectionTwoPhotoContainer {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        width: 100%;
-    }
-    .photoTitle {
-        text-align: center;
-    }
-    .workLeftContainer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        width: 100%;
-    }
-    .text {
-        text-align: center;
-    }
-    .sectionFour {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-        width: 100vw;
-    }
-    .paragraph {
-        width: 90%;
-        padding: 5px;
-        font-size: 18px;
-    }
-    .workRightContainer {
-        width: 100%;
-        display: flex;
-        margin: 0px;
-        flex-direction: column;
-        align-items: center;
-    }
-    .smallText {
-        font-size: 15px;
-    }
-    .contactInputs {
-        display: flex;
-        width: 75vw;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 200px;
-    }
-    .messageContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 75vw;
-    }
-    .largerText {
-        font-weight: 200;
-        font-size: 30px;
-    }
-  
-    .small {
-        font-size: 13px;
-    }
+  .title {
+    padding: 8px;
+  }
+  .card {
+    opacity: 0;
+    margin: 10px;
+    filter: blur(5px);
+    transition: all 1s;
+    width: 345px;
+    height: 345px;
+    border-radius: 10px;
+    object-fit: cover;
+    opacity: 0;
+  }
+  .picRow {
+    flex-direction: column;
+    width: 100%;
+  }
+  .middle {
+    flex-direction: column;
+    width: 100%;
+  }
+  .socialsContainer {
+    display: none;
+  }
+  .headerWords {
+    margin: 25px;
+    font-size: 20px;
+    font-weight: 200;
+    display: none;
+  }
+  .headerWord {
+    font-weight: 200;
+    font-size: 37px;
+    text-align: center;
+  }
+  .headerContainer {
+    width: 100vw;
+  }
+  .header {
+    width: 100%;
+  }
+  .hide {
+    display: none;
+  }
+  .divWordContainer {
+    width: 100vw;
+    justify-content: space-around;
+    margin: 5px;
+    height: 100%;
+    align-items: center;
+  }
+  .sectionOneFont {
+    font-size: 50px;
+  }
+  .mainScreenRight {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+  }
+  .section {
+    height: 80vh;
+  }
+  .photoTitle {
+    font-size: 30px;
+  }
+  .sectionTwoPhotoContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+  }
+  .photoTitle {
+    text-align: center;
+  }
+  .workLeftContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .text {
+    text-align: center;
+  }
+  .sectionFour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100vw;
+  }
+  .paragraph {
+    width: 90%;
+    padding: 5px;
+    font-size: 18px;
+  }
+  .workRightContainer {
+    width: 100%;
+    display: flex;
+    margin: 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .smallText {
+    font-size: 15px;
+  }
+  .contactInputs {
+    display: flex;
+    width: 75vw;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+  }
+  .messageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75vw;
+  }
+  .largerText {
+    font-weight: 200;
+    font-size: 30px;
+  }
+
+  .small {
+    font-size: 13px;
+  }
 }
 
 @media (width < 600px) {
-    .headerWord {
-        font-weight: 200;
-        font-size: 25px;
-        text-align: center;
-    }
-    .picRowSolar {
-        flex-direction: column-reverse;
-    }
-    .card {
-        opacity: 0;
-        margin: 10px;
-        filter: blur(5px);
-        transition: all 1s;
-        width: 300px;
-        height: 300px;
-        border-radius: 10px;
-        object-fit: cover;
-        opacity: 0;
-    }
-    li {
-        font-size: 17px;
-    }
-    .intro {
-        width: 90%;
-        padding: 15px;
-        font-size: 17px;
-        font-weight: 200;
-    }
-    .headerWord {
-        font-weight: 350;
-        font-size: 23px;
-    }
-    .project {
-        width: 350px;
-        height: 250px;
-    }
-    .sectionFour {
-        padding-bottom: 120px;
-        padding-top: 0px;
-    }
-    .largerText {
-        font-size: 35px;
-    }
+  .headerWord {
+    font-weight: 200;
+    font-size: 25px;
+    text-align: center;
+  }
+  .picRowSolar {
+    flex-direction: column-reverse;
+  }
+  .card {
+    opacity: 0;
+    margin: 10px;
+    filter: blur(5px);
+    transition: all 1s;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    opacity: 0;
+  }
+  li {
+    font-size: 17px;
+  }
+  .intro {
+    width: 90%;
+    padding: 15px;
+    font-size: 17px;
+    font-weight: 200;
+  }
+  .headerWord {
+    font-weight: 350;
+    font-size: 23px;
+  }
+  .project {
+    width: 350px;
+    height: 250px;
+  }
+  .sectionFour {
+    padding-bottom: 120px;
+    padding-top: 0px;
+  }
+  .largerText {
+    font-size: 35px;
+  }
 }

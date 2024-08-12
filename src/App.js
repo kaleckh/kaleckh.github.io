@@ -53,7 +53,7 @@ function App() {
       setCssPhoto("showTrans");
     } else if (inViewPhotoLeft) {
       setCssPhotoLeft("showTrans");
-      debugger
+      debugger;
     }
   }, [inView, inViewTop]);
   const sendEmail = (e) => {
@@ -64,7 +64,7 @@ function App() {
         "service_oax31j8",
         "template_i93h3gc",
         form.current,
-        "NIDXoMEDkdLg6tug7"
+        "NIDXoMEDkdLg6tug7",
       )
       .then(
         (result) => {
@@ -72,7 +72,7 @@ function App() {
         },
         (error) => {
           console.log(error.text);
-        }
+        },
       );
     e.target.reset();
   };
@@ -98,16 +98,22 @@ function App() {
       <div id="section-1" className="section one">
         <div className="mainScreenLeft">
           <div className="socialsContainer">
-            <a target={'_blank'} href="https://twitter.com/kalehamm">
+            <a target={"_blank"} href="https://twitter.com/kalehamm">
               <Twitter />
             </a>
-            <a target={'_blank'} href="https://www.instagram.com/kale_hamm/?next=%2F">
+            <a
+              target={"_blank"}
+              href="https://www.instagram.com/kale_hamm/?next=%2F"
+            >
               <Insta />
             </a>
-            <a target={'_blank'} href="https://www.linkedin.com/in/kaleck-hamm-692a54a1/">
+            <a
+              target={"_blank"}
+              href="https://www.linkedin.com/in/kaleck-hamm-692a54a1/"
+            >
               <Linkedin />
             </a>
-            <a target={'_blank'} href="https://github.com/kaleckh">
+            <a target={"_blank"} href="https://github.com/kaleckh">
               <Github />
             </a>
 
@@ -119,35 +125,26 @@ function App() {
 
           <div className="headerWord">I'm a full stack Software Engineer</div>
           <div className="intro">
-          Welcome! I'm Kaleck Hamm, a passionate Full Stack Developer who loves creating robust web applications. I work on both front-end and back-end development, using top technologies like React.js, Angular, Node.js and Ionic to build smooth and engaging digital experiences that not only function perfectly but also rank well on search engines.
+            Welcome! I'm Kaleck Hamm, a passionate Full Stack Developer who
+            loves creating awesome projects. I work on both front-end and
+            back-end development, using top technologies like React.js, Angular,
+            Node.js and Ionic to build smooth and engaging software that not
+            only functions perfectly, but also ranks well on search engines.
           </div>
-        </div>
-      </div>
-      <div id="section-2" className="redSection two">
-        <div className="twoTitle sticky">
-          <div className="photoTitle">I Like To Take Photos And Travel</div>
-        </div>
-        <div className="sectionTwoPhotoContainer">
-          <Image source={photo1} />
-          <Image source={photo5} />
-          <Image source={photo6} />
-          <Image source={photo2} new={"hide"} />
-          <Image source={photo3} new={"hide"} />
-
-          <Image source={photo4} new={"hide"} />
         </div>
       </div>
 
       <div id="section-3" className="sectionFour four">
-        <div
-          className={`workLeftContainer ${cssClass}`}
-          ref={ref}
-        >
+        <div className={`workLeftContainer ${cssClass}`} ref={ref}>
           <div className="acontainer">
             <div className="largerText text">Some things i've built</div>
             <div className="smallText hide">
               My GitHub link is
-              <a className="githubLink" target={'_blank'} href="https://github.com/kaleckh">
+              <a
+                className="githubLink"
+                target={"_blank"}
+                href="https://github.com/kaleckh"
+              >
                 Here
               </a>
             </div>
@@ -157,24 +154,24 @@ function App() {
         <div className={"column"}>
           <div className={"picRow"}>
             <div className="middle">
-
               <div className={`workRightContainer`}>
                 <div className="center">
-                  <a target="_blank" href="https://www.linkedin.com/feed/update/urn:li:activity:7221575398046777344/">
-                    <img
-                      src={usaToner}
-                      new={"workCard"}
-                      className="project"
-                    />
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/feed/update/urn:li:activity:7221575398046777344/"
+                  >
+                    <img src={usaToner} new={"workCard"} className="project" />
                   </a>
                 </div>
               </div>
-              <div
-                className={`stuff ${cssPhoto}`}
-              >
+              <div className={`stuff ${cssPhoto}`}>
                 <div className="title">React Ionic Messaging</div>
                 <div className="paragraph">
-                  Real-time messaging feature for an iOS or Android application using React Ionic, TypeScript and WebSockets
+                  I built a real-time messaging feature for iOS and Android apps
+                  using React Ionic, TypeScript, and WebSockets. The goal was to
+                  create a seamless chat experience that feels effortless for
+                  users. It ensures that people can connect instantly, whether
+                  they’re chatting socially or seeking help.
                 </div>
                 <div style={{ padding: "8px" }} className="small">
                   React Ionic | TypeScript | CSS | HTML | WebSockets
@@ -196,12 +193,16 @@ function App() {
                   </a>
                 </div>
               </div>
-              <div
-                className={`stuff ${cssPhoto}`}
-              >
+              <div className={`stuff ${cssPhoto}`}>
                 <div className="title">CopiersUtah.com</div>
                 <div className="paragraph">
-                  A platform that showcases, compares, and generates valuable leads for copiers, with a user-friendly experience that simplifies the copier purchasing process.
+                  The website I created for Copiers Utah is all about making
+                  life easier for their customers. It provides a clear,
+                  organized view of everything the company offers, from detailed
+                  product information to a simple quote request form. It’s
+                  designed to help users navigate the copier buying process with
+                  confidence, making it easier for them to find the right fit
+                  and reach out for a quote.
                 </div>
                 <div style={{ padding: "8px" }} className="small">
                   Next.js | Javascript | CSS | HTML
@@ -213,29 +214,30 @@ function App() {
             <div className="middle">
               <div className={`workRightContainer`}>
                 <div className="center">
-                  <a target="_blank" href="https://www.youtube.com/watch?v=nK6ggr6-on0">
-                    <img
-                      src={juke}
-                      new={"workCard"}
-                      className="project"
-                    />
+                  <a
+                    target="_blank"
+                    href="https://www.youtube.com/watch?v=nK6ggr6-on0"
+                  >
+                    <img src={juke} new={"workCard"} className="project" />
                   </a>
                 </div>
               </div>
-              <div
-                ref={refPhoto}
-                className={`stuff ${cssPhoto}`}
-              >
+              <div ref={refPhoto} className={`stuff ${cssPhoto}`}>
                 <div className="title">Jukify</div>
                 <div className="paragraph">
-                  Developed a Spotify Jukebox web application facilitating collaborative music curation. Users join rooms, contributing and voting on songs to create a communal playlist. Implemented features for seamless integration with Spotify's API, enabling real-time song addition and voting functionality.
+                  I developed a Spotify Jukebox web app that makes music more
+                  social. Users can hop into rooms, add their favorite tracks,
+                  and vote on what should play next, turning playlist creation
+                  into a fun, collaborative process. Thanks to the integration
+                  with Spotify’s API, the app allows for real-time song
+                  additions and voting, so the playlist always matches the mood
+                  of the room.
                 </div>
                 <div style={{ padding: "8px" }} className="small">
                   Next.js | Javascript | CSS | HTML | Sockets.io | Spotify API
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -283,7 +285,6 @@ function App() {
                 <li>Postgres</li>
                 <li>Prisma</li>
                 <li>Firebase</li>
-
               </div>
             </div>
           </div>

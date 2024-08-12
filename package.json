@@ -11,6 +11,7 @@
     "emailjs-com": "^3.2.0",
     "massive": "^6.11.1",
     "postinstall": "^0.8.0",
+    "prettier": "^3.3.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-intersection-observer": "^9.4.1",
@@ -19,6 +20,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "prettier": "prettier . --write",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
