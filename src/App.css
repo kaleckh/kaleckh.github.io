@@ -90,7 +90,7 @@ html {
   display: flex;
   align-items: center;
   width: 90%;
-
+  flex-direction: column;
   justify-content: space-evenly;
 }
 
@@ -114,14 +114,20 @@ html {
   height: fit-content;
   flex-direction: column;
 }
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: 95%;
+}
 
 .paragraph {
-  font-weight: 200;
-  font-size: 25px;
-  border: 0.5px white solid;
+  font-weight: 250;
+  font-size: 23px;
   padding: 15px;
-  width: 1000px;
   text-align: center;
+  width: 650px;
 }
 
 .section {
@@ -135,9 +141,9 @@ html {
   display: flex;
   flex-direction: column;
   height: fit-content;
-
-  width: 100vw;
+  width: 100%;
   padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 button {
@@ -422,6 +428,9 @@ a {
   display: flex;
   justify-content: center;
 }
+.title{
+  font-size: 30px
+}
 
 .wholeScreen {
   height: 100%;
@@ -603,6 +612,12 @@ li {
   transform: translateX(0);
 }
 
+@media (width < 1600px) {
+  .row{
+    flex-direction: column;
+  }
+}
+
 @media (width < 1300px) {
   .photoLeft {
     display: flex;
@@ -701,7 +716,7 @@ li {
     align-items: center;
     height: fit-content;
     width: 100vw;
-    padding-top: 200px;
+    padding-top: 70px;
   }
   .workRightContainer {
     width: 100%;
@@ -791,7 +806,8 @@ li {
     border-radius: 10px;
   }
   .sectionFive {
-    height: 70vh;
+    height: 90%;
+    padding-bottom: 50px;
     background-color: black;
     color: white;
     display: flex;
@@ -823,6 +839,7 @@ li {
   .middle {
     flex-direction: column;
     width: 100%;
+    padding: 25px;
   }
   .socialsContainer {
     display: none;

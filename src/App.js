@@ -97,7 +97,7 @@ function App() {
       </header>
       <div id="section-1" className="section one">
         <div className="mainScreenLeft">
-          <div className="socialsContainer">            
+          <div className="socialsContainer">
             <a
               target={"_blank"}
               href="https://www.instagram.com/kale_hamm/?next=%2F"
@@ -149,7 +149,7 @@ function App() {
           </div>
         </div>
         <div className={"column"}>
-          <div className={"picRow"}>
+          <div className="row">
             <div className="middle">
               <div className={`workRightContainer`}>
                 <div className="center">
@@ -175,34 +175,33 @@ function App() {
                 </div>
               </div>
             </div>
-          </div>
-
-          <div className={"picRow"}>
-            <div className="middle">
-              <div className={`workRightContainer`}>
-                <div className="center">
-                  <a target="_blank" href="https://www.copiersutah.com/">
-                    <img
-                      src={firstProject}
-                      new={"workCard"}
-                      className="project"
-                    />
-                  </a>
+            <div className={"picRow"}>
+              <div className="middle">
+                <div className={`workRightContainer`}>
+                  <div className="center">
+                    <a target="_blank" href="https://www.copiersutah.com/">
+                      <img
+                        src={firstProject}
+                        new={"workCard"}
+                        className="project"
+                      />
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div className={`stuff ${cssPhoto}`}>
-                <div className="title">CopiersUtah.com</div>
-                <div className="paragraph">
-                  The website I created for Copiers Utah is all about making
-                  life easier for their customers. It provides a clear,
-                  organized view of everything the company offers, from detailed
-                  product information to a simple quote request form. It’s
-                  designed to help users navigate the copier buying process with
-                  confidence, making it easier for them to find the right fit
-                  and reach out for a quote.
-                </div>
-                <div style={{ padding: "8px" }} className="small">
-                  Next.js | Javascript | CSS | HTML
+                <div className={`stuff ${cssPhoto}`}>
+                  <div className="title">CopiersUtah.com</div>
+                  <div className="paragraph">
+                    The website I created for Copiers Utah is all about making
+                    life easier for their customers. It provides a clear,
+                    organized view of everything the company offers, from detailed
+                    product information to a simple quote request form. It’s
+                    designed to help users navigate the copier buying process with
+                    confidence, making it easier for them to find the right fit
+                    and reach out for a quote.
+                  </div>
+                  <div style={{ padding: "8px" }} className="small">
+                    Next.js | Javascript | CSS | HTML
+                  </div>
                 </div>
               </div>
             </div>
