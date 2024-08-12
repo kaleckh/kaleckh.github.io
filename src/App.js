@@ -97,10 +97,7 @@ function App() {
       </header>
       <div id="section-1" className="section one">
         <div className="mainScreenLeft">
-          <div className="socialsContainer">
-            <a target={"_blank"} href="https://twitter.com/kalehamm">
-              <Twitter />
-            </a>
+          <div className="socialsContainer">            
             <a
               target={"_blank"}
               href="https://www.instagram.com/kale_hamm/?next=%2F"
