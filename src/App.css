@@ -839,7 +839,7 @@ li {
   .middle {
     flex-direction: column;
     width: 100%;
-    padding: 25px;
+    
   }
   .socialsContainer {
     display: none;
