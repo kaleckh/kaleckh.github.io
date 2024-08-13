@@ -82,10 +82,7 @@ function App() {
       <header className="header ">
         <div className="headerWords">Kaleck</div>
         <div className="headerContainer">
-          <div className="divWordContainer">
-            <div className="headerWord">
-              <a href="#section-2">Photos</a>
-            </div>
+          <div className="divWordContainer">            
             <div className="headerWord">
               <a href="#section-3">Projects</a>
             </div>
