@@ -15,6 +15,7 @@ import photo6 from "./photos/photo6.webp";
 import usaToner from "./photos/messaging.png";
 import { useInView } from "react-intersection-observer";
 import firstProject from "./photos/copiers.webp";
+import SocialMobile from "./photos/SocialMobile.png";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { Github } from "./media/Github";
@@ -82,7 +83,7 @@ function App() {
       <header className="header ">
         <div className="headerWords">Kaleck</div>
         <div className="headerContainer">
-          <div className="divWordContainer">            
+          <div className="divWordContainer">
             <div className="headerWord">
               <a href="#section-3">Projects</a>
             </div>
@@ -147,32 +148,30 @@ function App() {
         </div>
         <div className={"column"}>
           <div className="row">
-            <div className="middle">
-              <div className={`workRightContainer`}>
-                <div className="center">
-                  <a
-                    target="_blank"
-                    href="https://www.linkedin.com/feed/update/urn:li:activity:7221575398046777344/"
-                  >
-                    <img src={usaToner} new={"workCard"} className="project" />
-                  </a>
-                </div>
-              </div>
-              <div className={`stuff ${cssPhoto}`}>
-                <div className="title">React Ionic Messaging</div>
-                <div className="paragraph">
-                  I built a real-time messaging feature for iOS and Android apps
-                  using React Ionic, TypeScript, and WebSockets. The goal was to
-                  create a seamless chat experience that feels effortless for
-                  users. It ensures that people can connect instantly, whether
-                  they’re chatting socially or seeking help.
-                </div>
-                <div style={{ padding: "8px" }} className="small">
-                  React Ionic | TypeScript | CSS | HTML | WebSockets
-                </div>
-              </div>
-            </div>
+
             <div className={"picRow"}>
+              <div className="middle">
+                <div className={`workRightContainer`}>
+                  <div className="center">
+                    <a target="_blank" href="https://github.com/nclark561/social-mobile">
+                      <img
+                        src={SocialMobile}
+                        new={"workCard"}
+                        className="project"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div className={`stuff ${cssPhoto}`}>
+                  <div className="title">Twitter Dupe</div>
+                  <div className="paragraph">
+                    I built a fully functional Twitter-inspired app using React Native for the front end and Next.js for the back end, with a PostgreSQL database. It’s got all the core features—tweeting, liking, commenting, and real-time updates—packed into a sleek, mobile-friendly design. This project was a great way to push my skills in full-stack development and show how I can take a complex idea and bring it to life. Feel free to check out the code and see how I tackled challenges like data management and user interactions.
+                  </div>
+                  <div style={{ padding: "8px" }} className="small">
+                    Next.js | TypeScript | CSS | HTML | WebSockets | Postgres | React Native
+                  </div>
+                </div>
+              </div>
               <div className="middle">
                 <div className={`workRightContainer`}>
                   <div className="center">
@@ -228,6 +227,32 @@ function App() {
                 </div>
                 <div style={{ padding: "8px" }} className="small">
                   Next.js | Javascript | CSS | HTML | Sockets.io | Spotify API
+                </div>
+              </div>
+
+            </div>
+            <div className="middle">
+              <div className={`workRightContainer`}>
+                <div className="center">
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/feed/update/urn:li:activity:7221575398046777344/"
+                  >
+                    <img src={usaToner} new={"workCard"} className="project" />
+                  </a>
+                </div>
+              </div>
+              <div className={`stuff ${cssPhoto}`}>
+                <div className="title">React Ionic Messaging</div>
+                <div className="paragraph">
+                  I built a real-time messaging feature for iOS and Android apps
+                  using React Ionic, TypeScript, and WebSockets. The goal was to
+                  create a seamless chat experience that feels effortless for
+                  users. It ensures that people can connect instantly, whether
+                  they’re chatting socially or seeking help.
+                </div>
+                <div style={{ padding: "8px" }} className="small">
+                  React Ionic | TypeScript | CSS | HTML | WebSockets
                 </div>
               </div>
             </div>
