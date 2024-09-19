@@ -545,7 +545,7 @@ li {
 .frontend {
   height: 25%;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 23px;
 }
 
 .show {
@@ -820,6 +820,7 @@ li {
 @media (max-width: 600px) {
   .title {
     padding: 8px;
+    font-size: 20px;
   }
   .card {
     opacity: 0;
@@ -916,7 +917,7 @@ li {
   .paragraph {
     width: 90%;
     padding: 5px;
-    font-size: 18px;
+    font-size: 16px;
   }
   .workRightContainer {
     width: 100%;
@@ -948,6 +949,8 @@ li {
 
   .small {
     font-size: 13px;
+    text-align: center;
+    width: 93%;
   }
 }
 
@@ -993,6 +996,18 @@ li {
     padding-top: 0px;
   }
   .largerText {
-    font-size: 35px;
+    font-size: 25px;
+  }
+  .stuff{
+    padding: 10px;
+  }
+  .skills {
+    font-size: 28px;
+  }
+  .leftList li{
+    font-size: 13px;
+  }
+  .rightList li{
+    font-size: 13px;
   }
 }

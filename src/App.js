@@ -269,21 +269,22 @@ function App() {
             ref={refTop}
           >
             <div className="frontend">Frontend</div>
-            <div className="listContainer">
-              <div className={`leftList`}>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Next.js</li>
+              <div className="listContainer">
+                <div className={`leftList`}>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>TypeScript</li>                
+                  <li>Javascript</li>                
+                  <li>Next.js</li>
+                  <li>React Native</li>
+                </div>
+                <div className="rightList">
+                  <li>Bootstrap</li>
+                  <li>Git</li>                  
+                  <li>Node</li>
+                  <li>SQL</li>
+                </div>
               </div>
-              <div className="rightList">
-                <li>Bootstrap</li>
-                <li>Git</li>
-                <li>Node</li>
-                <li>SQL</li>
-              </div>
-            </div>
           </div>
           <div
             className={`frontContainer hideTransTop ${cssTopClass}`}
