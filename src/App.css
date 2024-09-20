@@ -1,5 +1,10 @@
+
 *:focus {
   outline: none !important;
+}
+
+body{
+  overflow-x: hidden;
 }
 
 html {
@@ -69,7 +74,7 @@ html {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
 }
 
 .mainScreenLeft {
@@ -133,7 +138,7 @@ html {
 .section {
   display: flex;
   height: fit-content;
-  width: 100vw;
+  width: 100%;
   padding-bottom: 50px;
 }
 
@@ -669,13 +674,13 @@ li {
     text-align: center;
   }
   .headerContainer {
-    width: 100vw;
+    width: 100%;
   }
   .header {
     width: 100%;
   }
   .divWordContainer {
-    width: 100vw;
+    width: 100%;
     justify-content: space-around;
     margin: 5px;
     height: 100%;
@@ -715,7 +720,7 @@ li {
     flex-direction: column;
     align-items: center;
     height: fit-content;
-    width: 100vw;
+    width: 100%;
     padding-top: 70px;
   }
   .workRightContainer {
@@ -857,7 +862,7 @@ li {
     text-align: center;
   }
   .headerContainer {
-    width: 100vw;
+    width: 100%;
   }
   .header {
     width: 100%;
@@ -866,7 +871,7 @@ li {
     display: none;
   }
   .divWordContainer {
-    width: 100vw;
+    width: 100%;
     justify-content: space-around;
     margin: 5px;
     height: 100%;
@@ -912,7 +917,7 @@ li {
     flex-direction: column;
     align-items: center;
 
-    width: 100vw;
+    width: 100%;
   }
   .paragraph {
     width: 90%;
