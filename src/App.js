@@ -15,7 +15,7 @@ import photo6 from "./photos/photo6.webp";
 import usaToner from "./photos/messaging.png";
 import { useInView } from "react-intersection-observer";
 import firstProject from "./photos/copiers.webp";
-import SocialMobile from "./photos/SocialMobile.png";
+import SocialMobile from "./photos/twitter.png";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { Github } from "./media/Github";
