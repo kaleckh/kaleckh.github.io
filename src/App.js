@@ -81,7 +81,7 @@ function App() {
   useEffect(() => {
     (function (ss, ex) {
       window.ldfdr = window.ldfdr || function () {
-        (ldfdr._q = ldfdr._q || []).push([].slice.call(arguments));
+        (window.ldfdr._q = window.ldfdr._q || []).push([].slice.call(arguments)); 
       };
       (function (d, s) {
         const fs = d.getElementsByTagName(s)[0];
