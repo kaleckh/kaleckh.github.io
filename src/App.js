@@ -155,7 +155,7 @@ function App() {
               <div className="middle">
                 <div className={`workRightContainer`}>
                   <div className="center">
-                    <a target="_blank" href="https://github.com/nclark561/social-mobile">
+                    <a target="_blank" href="https://social-mobile.vercel.app/">
                       <img
                         src={SocialMobile}
                         new={"workCard"}
