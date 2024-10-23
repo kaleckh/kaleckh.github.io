@@ -439,7 +439,7 @@ a {
 
 .wholeScreen {
   height: 100%;
-  width: 100%;
+  width: fit-content;
   scroll-behavior: smooth;
   color: white;
 }
