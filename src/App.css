@@ -13,7 +13,7 @@ html {
 
 .header {
   display: flex;
-  background-color: black;
+  background-color: rgb(33,32,32);
   display: fixed;
 }
 
@@ -33,7 +33,7 @@ html {
 }
 
 .line {
-  background-color: white;
+  background-color: #ffffff;
   margin-top: 15px;
   height: 80px;
   width: 2px;
@@ -159,19 +159,19 @@ button {
   justify-content: center;
   padding: 1.25em 3em;
   margin: 10px;
-  color: white;
-  background-color: black;
-  border: 1px solid white;
+  color: #ffffff;
+  background-color: rgb(33,32,32);
+  border: 1px solid #ffffff;
 }
 
 button:hover {
-  background-color: white;
-  color: black;
-  border: 1px solid white;
+  background-color: #ffffff;
+  color: rgb(33,32,32);
+  border: 1px solid #ffffff;
 }
 
 .one {
-  background-color: black;
+  background-color: rgb(33,32,32);
   display: flex;
 }
 
@@ -182,7 +182,7 @@ button:hover {
 }
 
 .two {
-  background-color: black;
+  background-color: rgb(33,32,32);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -274,7 +274,7 @@ button:hover {
 .square {
   height: 200px;
   width: 200px;
-  background-color: black;
+  background-color: rgb(33,32,32);
 }
 
 .sectionThree {
@@ -285,7 +285,7 @@ button:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: black;
+  background-color: rgb(33,32,32);
 }
 
 .sticky {
@@ -294,7 +294,7 @@ button:hover {
 }
 
 .contactContainer {
-  background-color: black;
+  background-color: rgb(33,32,32);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -330,7 +330,7 @@ input {
 }
 
 a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -382,13 +382,13 @@ a {
 }
 
 .githubLink {
-  color: white;
+  color: #ffffff;
   text-decoration: underline;
   margin: 8px;
 }
 
 .four {
-  background-color: black;
+  background-color: rgb(33,32,32);
   display: flex;
 }
 
@@ -441,7 +441,7 @@ a {
   height: 100%;
   width: fit-content;
   scroll-behavior: smooth;
-  color: white;
+  color: #ffffff;
 }
 
 .container {
@@ -476,15 +476,15 @@ a {
 
 .sectionFive {
   height: 60vh;
-  background-color: black;
-  color: white;
+  background-color: rgb(33,32,32);
+  color: #ffffff;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
 .frontContainer {
-  border: solid white 1px;
+  border: solid #ffffff 1px;
   width: 40%;
   height: 50%;
   display: flex;
@@ -524,7 +524,7 @@ li {
 }
 
 .backContainer {
-  border: solid white 1px;
+  border: solid #ffffff 1px;
   width: 40%;
   height: 40%;
   display: flex;
@@ -568,9 +568,9 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: black;
+  background-color: rgb(33,32,32);
   height: 20vh;
-  border-top: 1px solid white;
+  border-top: 1px solid #ffffff;
 }
 
 .name {
@@ -801,7 +801,7 @@ li {
     font-size: 25px;
   }
   .frontContainer {
-    border: solid white 1px;
+    border: solid #ffffff 1px;
     width: 80%;
     height: 40%;
     display: flex;
@@ -813,8 +813,8 @@ li {
   .sectionFive {
     height: 90%;
     padding-bottom: 50px;
-    background-color: black;
-    color: white;
+    background-color: rgb(33,32,32);
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
