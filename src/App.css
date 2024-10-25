@@ -218,7 +218,7 @@ button:hover {
   text-align: center;
   line-height: 1.5;
   padding: 25px;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 200;
   width: 75%;
 }
@@ -439,7 +439,9 @@ a {
 
 .wholeScreen {
   height: 100%;
-  width: fit-content;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   color: #ffffff;
 }
@@ -654,6 +656,8 @@ li {
   }
 }
 
+
+
 @media (width < 1041px) {
   .socialsContainer {
     display: none;
@@ -697,7 +701,7 @@ li {
     height: 200px;
   }
   .section {
-    height: 80vh;
+    height: 60vh;
   }
   .photoTitle {
     font-size: 30px;
@@ -822,7 +826,7 @@ li {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1360px) {
   .title {
     padding: 8px;
     font-size: 20px;
@@ -888,7 +892,7 @@ li {
     height: 200px;
   }
   .section {
-    height: 80vh;
+    height: 70vh;
   }
   .photoTitle {
     font-size: 30px;
@@ -919,10 +923,10 @@ li {
 
     width: 100%;
   }
-  .paragraph {
-    width: 90%;
+  .paragraph {    
     padding: 5px;
-    font-size: 16px;
+    width: 700px;
+    font-size: 21px;
   }
   .workRightContainer {
     width: 100%;
@@ -1014,5 +1018,20 @@ li {
   }
   .rightList li{
     font-size: 13px;
+  }
+}
+
+@media (width < 700px) { 
+  .paragraph{
+    font-size: 18px;
+    width: 450px;
+  }
+}
+
+
+@media (width < 450px) { 
+  .paragraph{
+    font-size: 16px;
+    width: 350px;
   }
 }
