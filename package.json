@@ -1,8 +1,7 @@
 {
   "name": "mywebsite",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "https://yourusername.github.io/repository-name",
+  "private": true,  
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@testing-library/jest-dom": "^6.5.0",
