@@ -16,6 +16,7 @@ import usaToner from "./photos/messaging.png";
 import { useInView } from "react-intersection-observer";
 import firstProject from "./photos/copiers.webp";
 import SocialMobile from "./photos/twitter.png";
+import AlienCafe from "./photos/AlienCafe.png";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { Github } from "./media/Github";
@@ -150,6 +151,32 @@ function App() {
             </div>
           </div>
           <div className={"column"}>
+            <div className="row">
+              <div className={"picRow"}>
+                <div className="middle">
+                  <div className={`workRightContainer`}>
+                    <div className="center">
+                      <a target="_blank" href="https://github.com/AlienServices/AlienSocial">
+                        <img
+                          src={AlienCafe}
+                          new={"workCard"}
+                          className="project"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div className={`stuff ${cssPhoto}`}>
+                    <div className="title">AlienCafe</div>
+                    <div className="paragraph">
+                      AlienCafe is a social discussion platform built with Ionic React,  designed to create debates around thesis driven arguments. It allows users to share ideas through structured posts, vote on those ideas, and debate on the truthfulness.
+                    </div>
+                    <div style={{ padding: "8px" }} className="small">
+                      React Ionic  | TypeScript | Next.js | Supabase | Postgres | REST | Prisma | Quill.js | WebSockets
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div className="row">
 
               <div className={"picRow"}>
